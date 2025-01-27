@@ -1,0 +1,15 @@
+.Gift{
+    margin-left: -120px;
+    margin-top: -10px;
+    
+}
+.Images{
+    margin-top: -30px;
+}
+
+.CardArea{
+    width: calc(25% - 40px);
+}
+.ProductLost{
+    gap: 40px;
+}
