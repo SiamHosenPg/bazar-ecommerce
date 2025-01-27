@@ -5,6 +5,7 @@ import AllProduct from "./pages/AllProduct";
 import Loginpage from "./pages/Loginpage";
 import Productpreview from "./pages/Productpreview";
 import Carts from "./pages/Carts";
+import Save from "./pages/Save";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path="/login" element={<Loginpage />} />
       <Route path="/productpreview" element={<Productpreview />} />
       <Route path="/carts" element={<Carts/>} />
+      <Route path="/save" element={<Save />} />
 
 
       </Routes>

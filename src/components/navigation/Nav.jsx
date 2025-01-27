@@ -15,7 +15,7 @@ const Nav = () => {
             <div className="Buttons flex gap-5 text-lg">
                 <button className='flex items-center gap-2'><i class="fa-solid fa-magnifying-glass"></i> <span className='text-sm'>Search</span></button>
                 <button><NavLink to="/login"><i class="fa-regular fa-user"></i></NavLink></button>
-                <button><i class="fa-regular fa-heart"></i></button>
+                <button><NavLink to="/save"><i class="fa-regular fa-heart"></i> </NavLink></button>
                 <button>  <NavLink to="/carts"> <i class="fa-solid fa-cart-shopping"></i></NavLink>   </button>
             </div>
         </div>
