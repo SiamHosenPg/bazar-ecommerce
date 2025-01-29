@@ -47,10 +47,18 @@ h4{
 
 }
 
+img{
+    object-fit: cover;
+}
+
 b{
     font-weight: 600;
 }
 
 button, input{
     outline: none;
+}
+
+.Deactive{
+    color: #777;
 }
