@@ -1,23 +1,23 @@
-import React from 'react'
+
 import Nav from '../components/navigation/Nav'
 import Footer from '../components/footer/Footer'
 import { useParams } from 'react-router'
 import { AllproductsData } from '../assets/Allproductsdata'
+import { ProfileImage } from '../assets/Profileiamge'
 import { NavLink } from 'react-router'
 
 const Productpreview = () => {
   const { id } = useParams();
   const ProductInfo = AllproductsData.find((p) => p.id === parseInt(id));
-
   return (
     <div>
         <Nav />
           <div className='px-32 mt-10'>
             <div className="TopNavigation flex items-center justify-start">
               <NavLink className='uppercase pr-2' to='/home'>Home</NavLink>
-              <i class="fa-solid fa-angle-right text-sm"></i>
+              <i className="fa-solid fa-angle-right text-sm"></i>
               <NavLink className='uppercase pr-2 ml-8' to='/allproducts'>Products</NavLink>
-              <i class="fa-solid fa-angle-right text-sm"></i>
+              <i className="fa-solid fa-angle-right text-sm"></i>
               <div className='ml-8'>{ProductInfo.name}</div>
             </div>
 
@@ -35,13 +35,13 @@ const Productpreview = () => {
                     <div className="flex items-start justify-between gap-20">
                           <div className="Image w-6/12 block bg-slate-200 rounded-lg p-10 hover:p-6 duration-300"><img className=' aspect-square  object-contain' src={ProductInfo.filePath} alt="" /></div>
                             <div className="Discribe w-6/12">
-                              <div className="Saler"><span className=' uppercase'>Author <i class="fa-solid fa-angle-right text-sm pr-5"></i>  </span>{ProductInfo.author}</div>
+                              <div className="Saler"><span className=' uppercase'>Author <i className="fa-solid fa-angle-right text-sm pr-5"></i>  </span>{ProductInfo.author}</div>
                               <h3 className='mt-10'>{ProductInfo.name}</h3>
                               <div className="Rating mt-4"> <span className=' text-2xl'>{ProductInfo.rating}</span> Rating</div>
                               <h2 className="Price mt-6">{ProductInfo.price} <span className=' font-medium'>$</span> <span className='font-normal text-sm'>Price</span></h2>
                               <div className="mt-3 flex justify-start items-center gap-3">
                                 <div className=' uppercase'>Color</div>
-                                <i class="fa-solid fa-angle-right text-sm"></i>
+                                <i className="fa-solid fa-angle-right text-sm"></i>
                               {
                                 ProductInfo.colors.map((Color, index) =>
                                   <div key={index}>{Color}</div>
@@ -53,9 +53,9 @@ const Productpreview = () => {
                               <button className="border mt-5 px-6 py-3 border-slate-600 rounded-sm text-black font-medium">Add To Cart</button>
                               <div className=" mt-10 uppercase font-medium flex justify-start items-center gap-10">Shear on : 
                                 <div className="Icon flex gap-4 font-medium text-xl">
-                                  <i class="fa-brands fa-facebook"></i>
-                                  <i class="fa-brands fa-twitter"></i>
-                                  <i class="fa-brands fa-instagram"></i>
+                                  <i className="fa-brands fa-facebook"></i>
+                                  <i className="fa-brands fa-twitter"></i>
+                                  <i className="fa-brands fa-instagram"></i>
                                 </div>
                               </div>
                         </div>
@@ -85,7 +85,50 @@ const Productpreview = () => {
                         <div className='Review mt-12'>
                         {
                           
-                           
+                          ProductInfo.productReviews && ProductInfo.productReviews.map((ProductData, index) => {
+                              const User = ProductData.Userid
+                              const UserData = ProfileImage.find(UID => UID.UID === User);
+                            return(
+                              <div className="Reviews mt-10 mb-20" key={index}>
+                                    <div className=" bg-[#f7f7f7] px-10 py-8 rounded-lg" key={index}>
+                                    <p className=' w-5/6'>{ProductData.ReviewText}</p>
+                                    <div className='mt-5'>Reating : {ProductData.rating}</div>
+                                    <div className="User flex justify-start items-center gap-4 mt-8">
+                                      <div className="profile w-12 h-12  rounded-full">
+                                        <img className='h-full bg-slate-900 w-full rounded-full' src={UserData.ProfileImg} alt="" />
+                                      </div>
+                                      <div className="txt">
+                                        <div className=' font-medium'>{ProductData.Name}</div>
+                                        <span className='block text-sm'>{ProductData.date}</span>
+                                      </div>
+                                    </div>
+
+                                  </div>
+
+                                  <div className='flex mt-5 justify-between items-start flex-col'>
+                                    <div className="react  flex gap-10 text-xl pl-11">
+                                      <button><i className="fa-regular fa-thumbs-up"></i></button>
+                                      <button><i className="fa-regular fa-thumbs-down"></i></button>
+                                    </div>
+                                    <div className="Reply pl-11 rounded-lg flex flex-col gap-5 mt-5">
+                                      {
+                                        ProductData.comments.map((ConnentsData, index) => {
+                                          return(
+                                            <div className="" key={index}>
+                                              <div className='flex justify-start items-start gap-5'>
+                                                <span className='block uppercase w-1/6 '>Author <i className="fa-solid fa-angle-right text-sm"></i></span> 
+                                                <span className='block w-5/6'>{ConnentsData.RplyText}</span>
+                                              </div>
+                                            </div>
+                                          )
+                                        })
+                                      }
+                                    </div>
+                                  </div>
+
+                              </div>
+                            )
+                           })
                         }
                         </div>
 

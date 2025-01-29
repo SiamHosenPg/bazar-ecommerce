@@ -33,8 +33,9 @@ export const AllproductsData = [
      productReviews: [
         {
           Name: "John Doe",
+          date:"8 July 2012",
           imageLink: "https://example.com/images/john.jpg",
-          ReviewText: "This wireless headphone is amazing! The sound quality is top-notch, and the battery life lasts all day.",
+          ReviewText: "The sound quality is top-notch, and the battery. This wireless headphone is amazing! The sound quality is top-notch, and the battery life lasts all day.",
           rating: 5,
           Userid: "user123",
           comments: [
@@ -50,6 +51,7 @@ export const AllproductsData = [
         },
         {
           Name: "Jane Smith",
+          date:"8 July 2012",
           imageLink: "https://example.com/images/jane.jpg",
           ReviewText: "The compact blender works great for my morning smoothies. It's powerful and easy to clean!",
           rating: 4,
@@ -63,6 +65,7 @@ export const AllproductsData = [
         },
         {
           Name: "Alice Johnson",
+          date:"9 July 2012",
           imageLink: "https://example.com/images/alice.jpg",
           ReviewText: "The ergonomic office chair is very comfortable. It has helped reduce my back pain during long work hours.",
           rating: 5,
@@ -80,6 +83,7 @@ export const AllproductsData = [
         },
         {
           Name: "Bob Brown",
+          date:"3 July 2012",
           imageLink: "https://example.com/images/bob.jpg",
           ReviewText: "The lightweight laptop is perfect for travel. It's fast, reliable, and the battery lasts a long time.",
           rating: 4.5,
@@ -131,6 +135,7 @@ export const AllproductsData = [
      productReviews: [
       {
         Name: "John Doe",
+        date:"8 agust 2012",
         imageLink: "https://example.com/images/john.jpg",
         ReviewText: "This wireless headphone is amazing! The sound quality is top-notch, and the battery life lasts all day.",
         rating: 5,
@@ -148,6 +153,7 @@ export const AllproductsData = [
       },
       {
         Name: "Jane Smith",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/jane.jpg",
         ReviewText: "The compact blender works great for my morning smoothies. It's powerful and easy to clean!",
         rating: 4,
@@ -161,6 +167,7 @@ export const AllproductsData = [
       },
       {
         Name: "Alice Johnson",
+        date:"18 July 2012",
         imageLink: "https://example.com/images/alice.jpg",
         ReviewText: "The ergonomic office chair is very comfortable. It has helped reduce my back pain during long work hours.",
         rating: 5,
@@ -178,6 +185,7 @@ export const AllproductsData = [
       },
       {
         Name: "Bob Brown",
+        date:"8 July 2022",
         imageLink: "https://example.com/images/bob.jpg",
         ReviewText: "The lightweight laptop is perfect for travel. It's fast, reliable, and the battery lasts a long time.",
         rating: 4.5,
@@ -252,6 +260,7 @@ export const AllproductsData = [
      productReviews: [
       {
         Name: "John Doe",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/john.jpg",
         ReviewText: "This wireless headphone is amazing! The sound quality is top-notch, and the battery life lasts all day.",
         rating: 5,
@@ -269,6 +278,7 @@ export const AllproductsData = [
       },
       {
         Name: "Jane Smith",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/jane.jpg",
         ReviewText: "The compact blender works great for my morning smoothies. It's powerful and easy to clean!",
         rating: 4,
@@ -282,6 +292,7 @@ export const AllproductsData = [
       },
       {
         Name: "Alice Johnson",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/alice.jpg",
         ReviewText: "The ergonomic office chair is very comfortable. It has helped reduce my back pain during long work hours.",
         rating: 5,
@@ -299,6 +310,7 @@ export const AllproductsData = [
       },
       {
         Name: "Bob Brown",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/bob.jpg",
         ReviewText: "The lightweight laptop is perfect for travel. It's fast, reliable, and the battery lasts a long time.",
         rating: 4.5,
@@ -346,6 +358,7 @@ export const AllproductsData = [
      productReviews: [
       {
         Name: "John Doe",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/john.jpg",
         ReviewText: "This wireless headphone is amazing! The sound quality is top-notch, and the battery life lasts all day.",
         rating: 5,
@@ -363,6 +376,7 @@ export const AllproductsData = [
       },
       {
         Name: "Jane Smith",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/jane.jpg",
         ReviewText: "The compact blender works great for my morning smoothies. It's powerful and easy to clean!",
         rating: 4,
@@ -376,6 +390,7 @@ export const AllproductsData = [
       },
       {
         Name: "Alice Johnson",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/alice.jpg",
         ReviewText: "The ergonomic office chair is very comfortable. It has helped reduce my back pain during long work hours.",
         rating: 5,
@@ -393,6 +408,7 @@ export const AllproductsData = [
       },
       {
         Name: "Bob Brown",
+        date:"8 July 2012",
         imageLink: "https://example.com/images/bob.jpg",
         ReviewText: "The lightweight laptop is perfect for travel. It's fast, reliable, and the battery lasts a long time.",
         rating: 4.5,
