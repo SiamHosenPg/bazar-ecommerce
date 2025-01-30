@@ -6,6 +6,7 @@ export const AllproductsData = [
     {
       id: 1,
       name: "Stylish Wireless Keyboard with Long Battery Life and Silent Keys",
+      Category:"shoe",
       author: "Sohail Ahmed",
       rating: 4.5,
       filePath: ProductsImages.Shows1,
@@ -103,10 +104,10 @@ export const AllproductsData = [
 
 
     },
-
     {
       id: 2,
       name: "Compact Travel Backpack with Multiple for Daily Essentials",
+      Category:"shoe",
       author: "Jahidul Islam",
       rating: 4.0,
       filePath: ProductsImages.Shows2,
@@ -207,6 +208,7 @@ export const AllproductsData = [
     {
       id: 3,
       name: "Stainless Steel Water Bottle with Control Design",
+      Category:"shoe",
       author: "Shamima Sultana",
       rating: 3.8,
       filePath: ProductsImages.Headphone,
@@ -233,6 +235,7 @@ export const AllproductsData = [
     {
       id: 4,
       name: "Durable Fitness Resistance Bands for Home Workouts Training",
+      Category:"shoe",
       author: "Mehzabin Chowdhury",
       rating: 4.7,
       filePath: ProductsImages.Shows5,
@@ -332,6 +335,7 @@ export const AllproductsData = [
     {
       id: 5,
       name: "Organic Herbal Tea Blend for Relaxation and Better Sleep Quality",
+      Category:"shoe",
       author: "Farhan Rahman",
       rating: 4.3,
       filePath: ProductsImages.Shows6,
@@ -426,7 +430,6 @@ export const AllproductsData = [
       }
       ],
     },
-    // Repeat similarly for products 6 through 20
   ];
   
   
