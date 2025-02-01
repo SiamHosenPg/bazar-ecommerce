@@ -10,6 +10,3 @@
 .CardArea{
     width: calc(25% - 40px);
 }
-.ProductLost{
-    gap: 40px;
-}

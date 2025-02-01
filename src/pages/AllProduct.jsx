@@ -12,7 +12,7 @@ const AllProduct = () => {
         <Nav />
 
         <div className=' block px-32 mt-10'>
-            <div className="ProductLost mt-10 flex items-start  stroke-none flex-wrap justify-start">
+            <div className="ProductLost mt-10 flex items-start gap-10 stroke-none flex-wrap justify-start">
             {AllproductsData && AllproductsData.map( (AllItemsProductsItems, index) => {
                     return(
                         <NavLink to={`/AllProducts/${AllItemsProductsItems.id}`} className=' block CardArea' href="" key={index}> 
