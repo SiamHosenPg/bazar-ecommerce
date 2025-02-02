@@ -5,6 +5,7 @@ import { useParams } from 'react-router'
 import { AllproductsData } from '../assets/Allproductsdata'
 import { ProfileImage } from '../assets/Profileiamge'
 import { NavLink } from 'react-router'
+import { FaStar } from "react-icons/fa";
 
 const Productpreview = () => {
   const { id } = useParams();
@@ -25,19 +26,30 @@ const Productpreview = () => {
             <div className="Content flex justify-between items-start gap-20 mt-10">
 
                 <div className="ColorImage w-1/12">
-                  <div className='bg-orange-100 p-6 hover:p-2 duration-300 rounded-md mb-6'><img className=' aspect-square  object-contain' src={ProductInfo.filePath} alt="" /></div>
-                  <div className='bg-orange-100 p-6 hover:p-2 duration-300 rounded-md mb-6'><img className=' aspect-square  object-contain' src={ProductInfo.filePath} alt="" /></div>
-                  <div className='bg-orange-100 p-6 hover:p-2 duration-300 rounded-md mb-6'><img className=' aspect-square  object-contain' src={ProductInfo.filePath} alt="" /></div>
-                  <div className='bg-orange-100 p-6 hover:p-2 duration-300 rounded-md mb-6'><img className=' aspect-square  object-contain' src={ProductInfo.filePath} alt="" /></div>
+                {ProductInfo.imageSources && ProductInfo.imageSources.map((Imageitems, index) => {
+                    return(
+                      <div key={index} className='bg-orange-100 overflow-hidden duration-300 rounded-md mb-6'>
+                        <img className=' aspect-square  object-contain hover:scale-[1.1] duration-300' src={Imageitems.ExtImage} alt="" />
+                      </div>
+                    )
+                })} 
                 </div>
 
                 <div className="w-11/12 ">
-                    <div className="flex items-start justify-between gap-20">
-                          <div className="Image w-6/12 block bg-slate-200 rounded-lg p-10 hover:p-6 duration-300"><img className=' aspect-square  object-contain' src={ProductInfo.filePath} alt="" /></div>
+                    <div className="flex items-start justify-between gap-20 ">
+                          <div className="overflow-hidden aspect-square w-6/12 block bg-slate-200 rounded-lg duration-300"><img className=' aspect-square w-full  hover:scale-[1.1] duration-300' src={ProductInfo.filePath} alt="" /></div>
                             <div className="Discribe w-6/12">
                               <div className="Saler"><span className=' uppercase'>Author <i className="fa-solid fa-angle-right text-sm pr-5"></i>  </span>{ProductInfo.author}</div>
                               <h3 className='mt-10'>{ProductInfo.name}</h3>
-                              <div className="Rating mt-4"> <span className=' text-2xl'>{ProductInfo.rating}</span> Rating</div>
+                              <div className="Rating mt-4 flex items-center justify-start gap-1">
+                                  <FaStar className=' text-orange-400'/>
+                                  <FaStar className=' text-orange-400'/>
+                                  <FaStar className=' text-orange-400'/>
+                                  <FaStar className=' text-orange-400'/>
+                                  <FaStar/>
+                                 <span className=' ml-6 text-2xl'>{ProductInfo.rating}</span>
+                                  Rating
+                              </div>
                               <h2 className="Price mt-6">{ProductInfo.price} <span className=' font-medium'>$</span> <span className='font-normal text-sm'>Price</span></h2>
                               <div className="mt-3 flex justify-start items-center gap-3">
                                 <div className=' uppercase'>Color</div>
@@ -70,7 +82,7 @@ const Productpreview = () => {
                           <button className='Deactive text-xl uppercase font-bold'>Reviews <span>(5)</span></button>
                         </div>
                         
-                        <div className="Texts hidden">
+                        <div className="Texts ">
                           <p className='w-5/6 mt-12'>{ProductInfo.description}</p>
                           <div className="mt-16">
                             <div className=" uppercase">Product Detels</div>
@@ -140,8 +152,13 @@ const Productpreview = () => {
                       </div>
                       <div className="Aditional w-2/6">
                         <div className=' uppercase '>Additional Information </div>
+                        <div className='mt-10'>Sales Count : {ProductInfo.sellcount}</div>
+                        <div className='mt-2'>Offer : {ProductInfo.offer}</div>
+                        <div className='mt-2'>Size : {ProductInfo.size}</div>
+
+          
                       </div>
-                      
+                
                     </div>
 
                 </div>
@@ -149,6 +166,7 @@ const Productpreview = () => {
             </div>
 
           </div>
+
         <Footer />
     </div>
   )

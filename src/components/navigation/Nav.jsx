@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from "react-router";
 
+
 const Nav = () => {
   return (
-    <nav className="Navigation w-full sticky top-0 h-20 px-32 bg-white z-50">
+    <nav className="Navigation w-full sticky top-0 h-20 px-32 border-b bg-white z-50">
         <div className="ratio flex items-center justify-between h-full">
             <div className="logo"><a href="" className='text-3xl font-bold'>Bazar</a></div>
             <ul className="Pages flex items-center justify-center gap-10  font-medium">

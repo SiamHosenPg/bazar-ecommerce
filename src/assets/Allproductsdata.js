@@ -7,8 +7,12 @@ export const AllproductsData = [
       id: 1,
       name: "Stylish Wireless Keyboard with Long Battery Life and Silent Keys",
       Category:"shoe",
+      discount:1.4,
+      offer:"10%",
+      sellcount:435,
       author: "Sohail Ahmed",
       rating: 4.5,
+      star:5,
       filePath: ProductsImages.Shows1,
       price: 25.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
@@ -28,9 +32,6 @@ export const AllproductsData = [
           "Bluetooth 5.0 for seamless connectivity.",
           "Built-in microphone for hands-free calls."
       ], 
-
-
-
      productReviews: [
         {
           Name: "John Doe",
@@ -108,9 +109,13 @@ export const AllproductsData = [
       id: 2,
       name: "Compact Travel Backpack with Multiple for Daily Essentials",
       Category:"shoe",
+      discount:4,
+      offer:"13%",
+      sellcount:831,
       author: "Jahidul Islam",
       rating: 4.0,
-      filePath: ProductsImages.Shows2,
+      star:4,
+      filePath: ProductsImages.Shoe3,
       price: 30.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
       description: "Elevate your music experience with wireless Bluetooth earbuds, equipped with advanced noise cancellation and crystal-clear sound. Boasting a 48-hour battery life, ergonomic fit, and water-resistant design, these earbuds are perfect for workouts, commutes, and calls, offering a truly immersive audio experience.",
@@ -118,10 +123,18 @@ export const AllproductsData = [
       
         colors: ["Red", "Blue", "Green", "Black"],
         imageSources: [
-          "/images/product2_1.jpg",
-          "/images/product2_2.jpg",
-          "/images/product2_3.jpg",
-          "/images/product2_4.jpg",
+          {
+            ExtImage: ProductsImages.Shoe1,
+          },
+          {
+            ExtImage: ProductsImages.Shoe2,
+          },
+          {
+            ExtImage: ProductsImages.Shoe3,
+          }
+          
+          
+          
         ],
         benefits: [
           "Lumbar support for back pain relief.",
@@ -209,8 +222,12 @@ export const AllproductsData = [
       id: 3,
       name: "Stainless Steel Water Bottle with Control Design",
       Category:"shoe",
+      discount:1.4,
+      offer:"10%",
+      sellcount:435,
       author: "Shamima Sultana",
       rating: 3.8,
+      star:3,
       filePath: ProductsImages.Headphone,
       price: 19.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
@@ -236,8 +253,12 @@ export const AllproductsData = [
       id: 4,
       name: "Durable Fitness Resistance Bands for Home Workouts Training",
       Category:"shoe",
+      discount:1.1,
+      offer:"10%",
+      sellcount:75,
       author: "Mehzabin Chowdhury",
       rating: 4.7,
+      star:5,
       filePath: ProductsImages.Shows5,
       price: 40.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
@@ -336,10 +357,14 @@ export const AllproductsData = [
       id: 5,
       name: "Organic Herbal Tea Blend for Relaxation and Better Sleep Quality",
       Category:"shoe",
+      discount:null,
+      offer:"0%",
+      sellcount:7531,
       author: "Farhan Rahman",
       rating: 4.3,
+      star:4,
       filePath: ProductsImages.Shows6,
-      price: 15.99,
+      price: 75.5,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
       description: "Achieve flawless lighting with an adjustable LED ring light, perfect for photography, video recording, or live streaming. Featuring customizable brightness settings, a sturdy tripod, and USB power, this ring light ensures professional-quality illumination for all your creative needs.",
       size: "200MB",

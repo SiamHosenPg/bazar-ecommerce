@@ -5,7 +5,7 @@ import { Images} from '../../assets/Assets'
 
 const Header = () => {
   return (
-    <div className='Header px-32'>
+    <div className='Header px-32 mt-14'>
         <div className="Ratio bg-slate-100 w-full rounded-xl flex items-center justify-between px-11 ps-28">
             <div className="Content w-11/12 flex items-center justify-between gap-16">
                 <div className="LeftTxt w-2/5">

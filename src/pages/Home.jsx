@@ -6,7 +6,10 @@ import Categories from '../components/topcategories/Categories'
 import Footer from '../components/footer/Footer'
 import Products from '../components/products/Products'
 
+
+
 const Home = () => {
+ 
   return (
     <div>
         <div className="topText h-14 flex items-center justify-between text-gray-500 px-32">
