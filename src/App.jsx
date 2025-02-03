@@ -6,7 +6,11 @@ import Loginpage from "./pages/Loginpage";
 import Productpreview from "./pages/Productpreview";
 import Carts from "./pages/Carts";
 import Save from "./pages/Save";
-
+import Shoepage from "./pages/Shoepage";
+import Watchproduct from "./pages/Watchproduct";
+import Dressproduct from "./pages/Dressproduct";
+import ScrollToTop from "./components/Scrolltotop";
+import Headphoneproduct from "./pages/Headphoneproduct";
 
 function App() {
 
@@ -14,7 +18,9 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
+      <ScrollToTop />
       <Routes>
+       
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -23,7 +29,10 @@ function App() {
       <Route path="/allproducts/:id" element={<Productpreview />} />
       <Route path="/carts" element={<Carts/>} />
       <Route path="/save" element={<Save />} />
-
+      <Route path="/shoe" element={<Shoepage />} />
+      <Route path="/watch" element={<Watchproduct />} />
+      <Route path="/dress" element={<Dressproduct />} />
+      <Route path="/headphones" element={<Headphoneproduct />} />
 
       </Routes>
       </BrowserRouter>

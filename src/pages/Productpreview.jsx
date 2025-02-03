@@ -5,7 +5,7 @@ import { useParams } from 'react-router'
 import { AllproductsData } from '../assets/Allproductsdata'
 import { ProfileImage } from '../assets/Profileiamge'
 import { NavLink } from 'react-router'
-import { FaStar } from "react-icons/fa";
+import Ratingstar from '../components/card/Ratingstar'
 
 const Productpreview = () => {
   const { id } = useParams();
@@ -28,8 +28,8 @@ const Productpreview = () => {
                 <div className="ColorImage w-1/12">
                 {ProductInfo.imageSources && ProductInfo.imageSources.map((Imageitems, index) => {
                     return(
-                      <div key={index} className='bg-orange-100 overflow-hidden duration-300 rounded-md mb-6'>
-                        <img className=' aspect-square  object-contain hover:scale-[1.1] duration-300' src={Imageitems.ExtImage} alt="" />
+                      <div key={index} className='bg-slate-200 overflow-hidden duration-300 rounded-md mb-6 border '>
+                        <img className=' aspect-square hover:scale-[1.1] duration-300' src={Imageitems.ExtImage} alt="" />
                       </div>
                     )
                 })} 
@@ -37,16 +37,15 @@ const Productpreview = () => {
 
                 <div className="w-11/12 ">
                     <div className="flex items-start justify-between gap-20 ">
-                          <div className="overflow-hidden aspect-square w-6/12 block bg-slate-200 rounded-lg duration-300"><img className=' aspect-square w-full  hover:scale-[1.1] duration-300' src={ProductInfo.filePath} alt="" /></div>
-                            <div className="Discribe w-6/12">
+                          <div className="overflow-hidden aspect-square w-6/12 block bg-slate-200 rounded-lg duration-300 border">
+                            <img className=' aspect-square w-full  hover:scale-[1.1] duration-300' src={ProductInfo.filePath} alt="" />
+                          </div>
+
+                          <div className="Discribe w-6/12">
                               <div className="Saler"><span className=' uppercase'>Author <i className="fa-solid fa-angle-right text-sm pr-5"></i>  </span>{ProductInfo.author}</div>
                               <h3 className='mt-10'>{ProductInfo.name}</h3>
                               <div className="Rating mt-4 flex items-center justify-start gap-1">
-                                  <FaStar className=' text-orange-400'/>
-                                  <FaStar className=' text-orange-400'/>
-                                  <FaStar className=' text-orange-400'/>
-                                  <FaStar className=' text-orange-400'/>
-                                  <FaStar/>
+                                  <Ratingstar className="block" rating={ProductInfo.rating} />
                                  <span className=' ml-6 text-2xl'>{ProductInfo.rating}</span>
                                   Rating
                               </div>

@@ -6,6 +6,9 @@ import Categories from '../components/topcategories/Categories'
 import Footer from '../components/footer/Footer'
 import Products from '../components/products/Products'
 
+import { IoLocationOutline } from "react-icons/io5";
+import { GiWorld } from "react-icons/gi";
+
 
 
 const Home = () => {
@@ -15,8 +18,8 @@ const Home = () => {
         <div className="topText h-14 flex items-center justify-between text-gray-500 px-32">
             <div className="left">siamhosenpg@gmail.com</div>
             <div className="links flex gap-8 items-center">
-                <a href=""><i class="fa-solid fa-location-dot text-sm"></i> Bangladesh</a>
-                <a href=""><i class="fa-solid fa-earth-americas text-sm"></i> English</a>
+                <a className='flex items-center gap-1' href=""><IoLocationOutline /> Bangladesh</a>
+                <a className='flex items-center gap-1' href=""><GiWorld /> English</a>
                 <a href="">About Our Company</a>
                 <a href="">Developer Contruct</a>
             </div>

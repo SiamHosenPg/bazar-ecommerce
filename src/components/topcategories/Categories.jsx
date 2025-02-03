@@ -1,5 +1,6 @@
 import React from 'react'
 import { CategoriesList} from '../../assets/Assets'
+import { NavLink } from 'react-router'
 
 const Categories = () => {
   return (
@@ -8,9 +9,9 @@ const Categories = () => {
             <h3>Top Categories</h3>
                 <div className="Lists mt-10 flex items-center justify-between gap-7 h-32">
                         {
-                            CategoriesList.map( Ctgores => {
+                         CategoriesList &&  CategoriesList.map( (Ctgores, index) => {
                                 return(
-                                    <a className='block h-full' href="">
+                                    <NavLink to={Ctgores.Urldirectory} key={index} className='block h-full' href="">
                                         <div className="Box  flex items-center gap-4  h-full py-2 px-4 rounded-xl duration-300 hover:bg-slate-100 bg-slate-50">
                                             <img className='w-16 '  src={Ctgores.Images} alt="" />
                                             <div className="Txt">
@@ -18,7 +19,7 @@ const Categories = () => {
                                                 <p className='text-xs mt-1'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatibus.</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </NavLink>
                                 )
                             }) 
                         }

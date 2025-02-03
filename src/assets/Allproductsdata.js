@@ -13,17 +13,19 @@ export const AllproductsData = [
       author: "Sohail Ahmed",
       rating: 4.5,
       star:5,
-      filePath: ProductsImages.Shows1,
+      filePath: ProductsImages.Shoe4,
       price: 25.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
       description: "Discover the ultimate ergonomic office chair, designed for maximum comfort during long hours. Featuring adjustable lumbar support, breathable mesh fabric, and a sleek modern design, this chair ensures productivity while maintaining posture. Perfect for home or office use, it combines style and functionality seamlessly.",
       size: "250MB",
       colors: ["Red", "Blue", "Green", "Black"],
       imageSources: [
-          "/images/product1_1.jpg",
-          "/images/product1_2.jpg",
-          "/images/product1_3.jpg",
-          "/images/product1_4.jpg",
+        {
+          ExtImage: ProductsImages.Shoe4,
+        },
+        {
+          ExtImage: ProductsImages.Shoe5,
+        }
       ],
       benefits: [
           "20-hour battery life for all-day use.",
@@ -132,9 +134,6 @@ export const AllproductsData = [
           {
             ExtImage: ProductsImages.Shoe3,
           }
-          
-          
-          
         ],
         benefits: [
           "Lumbar support for back pain relief.",
@@ -221,24 +220,29 @@ export const AllproductsData = [
     {
       id: 3,
       name: "Stainless Steel Water Bottle with Control Design",
-      Category:"shoe",
+      Category:"headphone",
       discount:1.4,
       offer:"10%",
       sellcount:435,
       author: "Shamima Sultana",
       rating: 3.8,
       star:3,
-      filePath: ProductsImages.Headphone,
+      filePath: ProductsImages.Headphone2,
       price: 19.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
       description: "Transform your workspace with an adjustable height standing desk, featuring a smooth electric lift system for seamless transitions. Designed for ergonomic support and productivity, this desk is ideal for home offices or professional setups. Its sturdy build and spacious surface ensure a clutter-free experience.",
       size: "220MB",
       colors: ["Red", "Blue", "Green", "Black"],
       imageSources: [
-          "/images/product3_1.jpg",
-          "/images/product3_2.jpg",
-          "/images/product3_3.jpg",
-          "/images/product3_4.jpg",
+        {
+          ExtImage: ProductsImages.Headphone1,
+        },
+        {
+          ExtImage: ProductsImages.Headphone2,
+        },
+        {
+          ExtImage: ProductsImages.Headphone3,
+        },
       ],
         benefits: [
           "15.6-inch Full HD display for clear visuals.",
@@ -259,17 +263,16 @@ export const AllproductsData = [
       author: "Mehzabin Chowdhury",
       rating: 4.7,
       star:5,
-      filePath: ProductsImages.Shows5,
+      filePath: ProductsImages.Shoe6,
       price: 40.99,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
       description: "Stay hydrated with a stainless steel water bottle that keeps your beverages hot or cold for hours. With a leak-proof lid and sleek, durable design, it’s perfect for on-the-go use, whether you're at work, the gym, or traveling outdoors.",
       size: "350MB",
       colors: ["Red", "Blue", "Green", "Black"],
       imageSources: [
-          "/images/product4_1.jpg",
-          "/images/product4_2.jpg",
-          "/images/product4_3.jpg",
-          "/images/product4_4.jpg",
+        {
+          ExtImage: ProductsImages.Shoe6,
+        }
       ],
       benefits: [
           "Tracks heart rate, steps, and sleep patterns.",
@@ -356,24 +359,32 @@ export const AllproductsData = [
     {
       id: 5,
       name: "Organic Herbal Tea Blend for Relaxation and Better Sleep Quality",
-      Category:"shoe",
+      Category:"dress",
       discount:null,
       offer:"0%",
       sellcount:7531,
       author: "Farhan Rahman",
       rating: 4.3,
       star:4,
-      filePath: ProductsImages.Shows6,
+      filePath: ProductsImages.Dress1,
       price: 75.5,
       summaries:"This sleek wireless headphones offer 20-hour battery life, noise cancellation, and crystal-clear sound quality for an immersive listening experience.",
       description: "Achieve flawless lighting with an adjustable LED ring light, perfect for photography, video recording, or live streaming. Featuring customizable brightness settings, a sturdy tripod, and USB power, this ring light ensures professional-quality illumination for all your creative needs.",
       size: "200MB",
       colors: ["Red", "Blue", "Green", "Black"],
       imageSources: [
-          "/images/product5_1.jpg",
-          "/images/product5_2.jpg",
-          "/images/product5_3.jpg",
-          "/images/product5_4.jpg",
+        {
+          ExtImage: ProductsImages.Dress1,
+        },
+        {
+          ExtImage: ProductsImages.Dress2,
+        },
+        {
+          ExtImage: ProductsImages.Dress3,
+        },
+        {
+          ExtImage: ProductsImages.Dress4,
+        },
       ],
       benefits: [
           "5-liter capacity for family-sized meals.",

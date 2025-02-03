@@ -23,23 +23,28 @@ export const Images ={
 export const CategoriesList = [
     {
         Name:"Headphones",
-        Images: Headphons
+        Images: Headphons,
+        Urldirectory:"/headphones"
     },
     {
         Name:"Watch",
-        Images: Watch1
+        Images: Watch1,
+        Urldirectory:"/watch"
     },
     {
         Name:"Dress",
-        Images: Dress1
+        Images: Dress1,
+        Urldirectory:"/dress"
     },
     {
         Name:"Shoes",
-        Images: Shoes3
+        Images: Shoes3,
+        Urldirectory:"/shoe"
     },
     {
-        Name:"aaaa",
-        Images: Headphons
+        Name:"Tshirt",
+        Images: Headphons,
+        Urldirectory:"/tshirt"
     }
 ]
 
