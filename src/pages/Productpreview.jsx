@@ -23,11 +23,11 @@ const Productpreview = () => {
               <i className="fa-solid fa-angle-right text-sm"></i>
               <div className='ml-8'>{ProductInfo.name}</div>
             </div>
-
+            {/* Top Navigation type product informatin section */}
             
             <div className="Content flex justify-between items-start gap-20 mt-10">
 
-                <div className="ColorImage w-1/12">
+              <div className="ColorImage w-1/12">
                 {ProductInfo.imageSources && ProductInfo.imageSources.map((Imageitems, index) => {
                     return(
                       <div onClick={() => SetPrevewImage(Imageitems.ExtImage)} key={index} className='bg-slate-200 overflow-hidden duration-300 rounded-md mb-6 border '>
@@ -35,10 +35,11 @@ const Productpreview = () => {
                       </div>
                     )
                 })} 
-                </div>
+              </div>
+              {/* Left All Immage Section */}
 
                 <div className="w-11/12 ">
-                    <div className="flex items-start justify-between gap-20 ">
+                  <div className="flex items-start justify-between gap-20 ">
                           <div className="overflow-hidden aspect-square w-6/12 block bg-slate-200 rounded-lg duration-300 border">
                             <img className=' aspect-square w-full  hover:scale-[1.1] duration-300' src={PrevewImage} alt="" />
                           </div>
@@ -48,10 +49,10 @@ const Productpreview = () => {
                               <h3 className='mt-10'>{ProductInfo.name}</h3>
                               <div className="Rating mt-4 flex items-center justify-start gap-1">
                                   <Ratingstar className="block" rating={ProductInfo.rating} />
-                                 <span className=' ml-6 text-2xl'>{ProductInfo.rating}</span>
-                                  Rating
+                                  <span className=' ml-6 text-2xl font-medium'>{ProductInfo.rating}</span>
+                                  <span className='ml-3'>{`${ProductInfo.ratingcount} Peoples`}</span>
                               </div>
-                              <h2 className="Price mt-6">{ProductInfo.price} <span className=' font-medium'>$</span> <span className='font-normal text-sm'>Price</span></h2>
+                              <h2 className="Price mt-6 font-semibold">{ProductInfo.price} <span className=' font-medium'>$</span> <span className='font-normal text-sm'>Price</span></h2>
                               <div className="mt-3 flex justify-start items-center gap-3">
                                 <div className=' uppercase'>Color</div>
                                 <i className="fa-solid fa-angle-right text-sm"></i>
@@ -62,7 +63,7 @@ const Productpreview = () => {
                               }
                               </div>
                               
-                              <p className="w-4/5 mt-10">{ProductInfo.summaries}</p>
+                              <p className="w-4/5 mt-10 leading-7">{ProductInfo.summaries}</p>
                               <button className="border mt-5 px-6 py-3 border-slate-600 rounded-sm text-black font-medium">Add To Cart</button>
                               <div className=" mt-10 uppercase font-medium flex justify-start items-center gap-10">Shear on : 
                                 <div className="Icon flex gap-4 font-medium text-xl">
@@ -72,19 +73,18 @@ const Productpreview = () => {
                                 </div>
                               </div>
                         </div>
-                    </div>
+                  </div>
+                  {/* Top Area With iamge and main Details section */}
 
-
-
-                    <div className="Bootom mt-10 flex justify-between items-start gap-20">
+                  <div className="Bootom mt-10 flex justify-between items-start gap-20">
                       <div className="DiscribeText w-4/6">
                         <div className="Top flex justify-start items-center gap-10 border-b-[1px] pb-4">
                           <button className='text-xl uppercase font-bold'>Description </button>
-                          <button className='Deactive text-xl uppercase font-bold'>Reviews <span>(5)</span></button>
+                          <button className='Deactive text-xl uppercase font-bold'>Reviews <span>{`${ProductInfo.productReviews.length}`}</span></button>
                         </div>
-                        
+                        {/* Title bar */}
                         <div className="Texts ">
-                          <p className='w-5/6 mt-12'>{ProductInfo.description}</p>
+                          <p className='w-5/6 mt-12 leading-7'>{ProductInfo.description}</p>
                           <div className="mt-16">
                             <div className=" uppercase">Product Detels</div>
                             <ul className='mt-5'>
@@ -94,16 +94,16 @@ const Productpreview = () => {
                             </ul>
                           </div>
                         </div>
+                        {/* Product Describe */}
 
                         <div className='Review mt-12'>
-                        {
-                          
+                          {
                           ProductInfo.productReviews && ProductInfo.productReviews.map((ProductData, index) => {
                               const User = ProductData.Userid
                               const UserData = ProfileImage.find(UID => UID.UID === User);
                             return(
                               <div className="Reviews mt-10 mb-20" key={index}>
-                                    <div className=" bg-[#f7f7f7] px-10 py-8 rounded-lg" key={index}>
+                                  <div className=" bg-[#f7f7f7] px-10 py-8 rounded-lg" key={index}>
                                     <p className=' w-5/6'>{ProductData.ReviewText}</p>
                                     <div className='mt-5'>Reating : {ProductData.rating}</div>
                                     <div className="User flex justify-start items-center gap-4 mt-8">
@@ -115,7 +115,6 @@ const Productpreview = () => {
                                         <span className='block text-sm'>{ProductData.date}</span>
                                       </div>
                                     </div>
-
                                   </div>
 
                                   <div className='flex mt-5 justify-between items-start flex-col'>
@@ -123,7 +122,7 @@ const Productpreview = () => {
                                       <button><i className="fa-regular fa-thumbs-up"></i></button>
                                       <button><i className="fa-regular fa-thumbs-down"></i></button>
                                     </div>
-                                    <div className="Reply pl-11 rounded-lg flex flex-col gap-5 mt-5">
+                                    <div className="Reply pl-11 rounded-lg flex flex-col gap-5 mt-5 w-5/6">
                                       {
                                         ProductData.comments.map((ConnentsData, index) => {
                                           return(
@@ -138,17 +137,12 @@ const Productpreview = () => {
                                       }
                                     </div>
                                   </div>
-
                               </div>
                             )
                            })
-                        }
+                          }
                         </div>
-
-
-
-
-
+                        {/* Revew Content  */}
 
                       </div>
                       <div className="Aditional w-2/6">
@@ -156,16 +150,14 @@ const Productpreview = () => {
                         <div className='mt-10'>Sales Count : {ProductInfo.sellcount}</div>
                         <div className='mt-2'>Offer : {ProductInfo.offer}</div>
                         <div className='mt-2'>Size : {ProductInfo.size}</div>
-
-          
                       </div>
-                
-                    </div>
-
+        
+                  </div>
+                  {/* Botton Product Information */}
                 </div>
-
+                {/* Product Main Area  */}
             </div>
-
+            {/* Body Product Information Section */}
           </div>
 
         <Footer />

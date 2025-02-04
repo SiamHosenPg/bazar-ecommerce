@@ -27,7 +27,10 @@ import Headphone1 from './image/product/earphone/headphone/headphone1.jpg'
 import Headphone2 from './image/product/earphone/headphone/headphone2.jpg'
 import Headphone3 from './image/product/earphone/headphone/headphone3.jpg'
 
-
+import Sunscreen1 from './image/product/faceproduct/id1/sunscreem2.jpg'
+import Sunscreen2 from './image/product/faceproduct/id1/sunscreem3.jpg'
+import Sunscreen3 from './image/product/faceproduct/id1/sunscreem4.jpg'
+import Sunscreen4 from './image/product/faceproduct/id1/sunscreem5.jpg'
 
 
 
@@ -61,5 +64,11 @@ export const ProductsImages ={
 
     Headphone1,
     Headphone2,
-    Headphone3
+    Headphone3,
+
+    Sunscreen1,
+    Sunscreen2,
+    Sunscreen3,
+    Sunscreen4,
+  
 }

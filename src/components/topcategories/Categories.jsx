@@ -16,7 +16,7 @@ const Categories = () => {
                                             <img className='w-16 '  src={Ctgores.Images} alt="" />
                                             <div className="Txt">
                                                 <b className=' block'>{Ctgores.Name}</b>
-                                                <p className='text-xs mt-1'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatibus.</p>
+                                                <p className='p-ellipsetext text-xs mt-1'>{Ctgores.Text}</p>
                                             </div>
                                         </div>
                                     </NavLink>

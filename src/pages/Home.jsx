@@ -18,10 +18,10 @@ const Home = () => {
         <div className="topText h-14 flex items-center justify-between text-gray-500 px-32">
             <div className="left">siamhosenpg@gmail.com</div>
             <div className="links flex gap-8 items-center">
-                <a className='flex items-center gap-1' href=""><IoLocationOutline /> Bangladesh</a>
-                <a className='flex items-center gap-1' href=""><GiWorld /> English</a>
-                <a href="">About Our Company</a>
-                <a href="">Developer Contruct</a>
+                <div className='flex items-center gap-1' href=""><IoLocationOutline /> Bangladesh</div>
+                <div className='flex items-center gap-1' href=""><GiWorld /> English</div>
+                <div href="">About Our Company</div>
+                <div href="">Developer Contruct</div>
             </div>
         </div>
        <Nav />

@@ -4,34 +4,38 @@ import Dress1 from './image/dress.png'
 import Faceproduct from './image/faceproduct1.webp'
 import Watchpng from './image/watch-png.png'
 
-
 export const CategoriesList = [
     {
-        Name:"Headphones",
+        Name: "Headphones",
         Images: Headphons,
-        Urldirectory:"/headphones"
+        Urldirectory: "/headphones",
+        Text: "Enjoy rich, clear sound with our high-quality, comfortable headphones."
     },
     {
-        Name:"Watch",
+        Name: "Watch",
         Images: Watchpng,
-        Urldirectory:"/watch"
+        Urldirectory: "/watch",
+        Text: "Stay stylish and on time with our premium collection of watches."
     },
     {
-        Name:"Dress",
+        Name: "Dress",
         Images: Dress1,
-        Urldirectory:"/dress"
+        Urldirectory: "/dress",
+        Text: "Find trendy and comfortable dresses perfect for any special occasion."
     },
     {
-        Name:"Shoes",
+        Name: "Shoes",
         Images: Shoes3,
-        Urldirectory:"/shoe"
+        Urldirectory: "/shoe",
+        Text: "Step up your fashion game with our stylish and durable shoes."
     },
     {
-        Name:"Face Product",
+        Name: "Face Product",
         Images: Faceproduct,
-        Urldirectory:"/faceproduct"
+        Urldirectory: "/faceproduct",
+        Text: "Get glowing skin with our best-quality face care products."
     }
-]
+];
 
 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router";
 import { BsCart,BsCartFill } from "react-icons/bs";
 import Ratingstar from './Ratingstar';
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Card = ({AllproductsData}) => {
     const DesibleDiscount = {
@@ -10,6 +11,7 @@ const Card = ({AllproductsData}) => {
     const ShowDiscount = {
         display: 'block',
       };
+
   return (
       <div className='block'>
         <div className="ProductList mt-10   gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 ">
@@ -33,9 +35,7 @@ const Card = ({AllproductsData}) => {
               </div>
               <div className="Order flex items-center justify-between mt-3 px-8">
                 <h4>{item.price} <span className='text-lg'>$</span></h4>
-                <BsCart className='text-lg' />
-                <BsCartFill  className=' hidden text-lg' />
-
+                <MdOutlineShoppingCart className='text-xl' />
               </div>
             </div>
           </NavLink>

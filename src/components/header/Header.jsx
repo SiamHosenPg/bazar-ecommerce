@@ -3,6 +3,7 @@ import './Header.css'
 import { FaAngleRight } from "react-icons/fa6";
 import { Headerdata } from '../../assets/Headerdata';
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router';
 
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
           setIndex((prev) => (prev + 1) % Headerdata.length);
       };
       useEffect(() => {
-        const interval = setInterval(nextData, 6000);
+        const interval = setInterval(nextData, 9000);
         return () => clearInterval(interval);
       }, []);
   return (
@@ -22,7 +23,7 @@ const Header = () => {
                         initial={{ opacity: 0,  }}
                         animate={{ opacity: 1, }}
                         exit={{ opacity: 0, x: -50 }}
-                        transition={{ duration: 0.5, delay: .5 }}
+                        transition={{ duration: 0, delay: 0 }}
 
             className="Content w-11/12 flex items-center justify-between gap-16">
                 <div className="LeftTxt w-2/5">
@@ -37,13 +38,15 @@ const Header = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.1 }}                        
-                    className='mt-8'>{Headerdata[index].text}
+                    className='mt-8 leading-7'>{Headerdata[index].text}
                     </motion.p>
-                    <motion.button 
+                    <NavLink to={`/${Headerdata[index].categories}`}>
+                    <motion.div 
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.4 }} 
-                    className='border border-[#aaa] px-8 py-3 rounded-sm mt-8'>View more</motion.button>
+                    className='border border-[#aaa] px-8 py-3 rounded-sm mt-8 w-40 text-center'>View more</motion.div>
+                    </NavLink>
                 </div>
                 <motion.div 
                         initial={{ opacity: 0, x: 150 }}
