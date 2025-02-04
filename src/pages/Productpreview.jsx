@@ -6,10 +6,12 @@ import { AllproductsData } from '../assets/Allproductsdata'
 import { ProfileImage } from '../assets/Profileiamge'
 import { NavLink } from 'react-router'
 import Ratingstar from '../components/card/Ratingstar'
+import { useState } from 'react'
 
 const Productpreview = () => {
   const { id } = useParams();
   const ProductInfo = AllproductsData.find((p) => p.id === parseInt(id));
+  const [PrevewImage, SetPrevewImage] = useState(ProductInfo.filePath);
   return (
     <div>
         <Nav />
@@ -28,7 +30,7 @@ const Productpreview = () => {
                 <div className="ColorImage w-1/12">
                 {ProductInfo.imageSources && ProductInfo.imageSources.map((Imageitems, index) => {
                     return(
-                      <div key={index} className='bg-slate-200 overflow-hidden duration-300 rounded-md mb-6 border '>
+                      <div onClick={() => SetPrevewImage(Imageitems.ExtImage)} key={index} className='bg-slate-200 overflow-hidden duration-300 rounded-md mb-6 border '>
                         <img className=' aspect-square hover:scale-[1.1] duration-300' src={Imageitems.ExtImage} alt="" />
                       </div>
                     )
@@ -38,7 +40,7 @@ const Productpreview = () => {
                 <div className="w-11/12 ">
                     <div className="flex items-start justify-between gap-20 ">
                           <div className="overflow-hidden aspect-square w-6/12 block bg-slate-200 rounded-lg duration-300 border">
-                            <img className=' aspect-square w-full  hover:scale-[1.1] duration-300' src={ProductInfo.filePath} alt="" />
+                            <img className=' aspect-square w-full  hover:scale-[1.1] duration-300' src={PrevewImage} alt="" />
                           </div>
 
                           <div className="Discribe w-6/12">

@@ -11,6 +11,7 @@ import Watchproduct from "./pages/Watchproduct";
 import Dressproduct from "./pages/Dressproduct";
 import ScrollToTop from "./components/Scrolltotop";
 import Headphoneproduct from "./pages/Headphoneproduct";
+import Faceproduct from "./pages/Faceproduct";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       <Route path="/watch" element={<Watchproduct />} />
       <Route path="/dress" element={<Dressproduct />} />
       <Route path="/headphones" element={<Headphoneproduct />} />
+      <Route path="/faceproduct" element={<Faceproduct />} />
 
       </Routes>
       </BrowserRouter>

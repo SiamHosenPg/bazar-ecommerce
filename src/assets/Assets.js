@@ -1,24 +1,9 @@
-import Headphons from './image/headphone.png'
-import Shoes from './image/shoe.png'
-import RedShow from './image/redshoe.png'
-import Shoes2 from './image/brown-leather-shoes.png'
+import Headphons from './image/headphone-png.png'
 import Shoes3 from './image/moadarn.png'
-import Shoes4 from './image/shoes.png'
-
-import Watch1 from './image/watch1.png'
-
 import Dress1 from './image/dress.png'
+import Faceproduct from './image/faceproduct1.webp'
+import Watchpng from './image/watch-png.png'
 
-export const Images ={
-    Headphons,
-    Shoes,
-    RedShow,
-    Shoes2,
-    Shoes3,
-    Shoes4,
-    Watch1,
-    Dress1
-}
 
 export const CategoriesList = [
     {
@@ -28,7 +13,7 @@ export const CategoriesList = [
     },
     {
         Name:"Watch",
-        Images: Watch1,
+        Images: Watchpng,
         Urldirectory:"/watch"
     },
     {
@@ -42,9 +27,9 @@ export const CategoriesList = [
         Urldirectory:"/shoe"
     },
     {
-        Name:"Tshirt",
-        Images: Headphons,
-        Urldirectory:"/tshirt"
+        Name:"Face Product",
+        Images: Faceproduct,
+        Urldirectory:"/faceproduct"
     }
 ]
 
