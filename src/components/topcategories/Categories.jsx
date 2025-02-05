@@ -4,8 +4,8 @@ import { NavLink } from 'react-router'
 
 const Categories = () => {
   return (
-    <div className='Categories px-32 mt-20'>
-        <div className="Ratio ">
+    <div className='Categories mt-20'>
+        <div className="PageRatio ">
             <h3>Top Categories</h3>
                 <div className="Lists mt-10 flex items-center justify-between gap-7 h-32">
                         {

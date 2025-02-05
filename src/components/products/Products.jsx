@@ -13,7 +13,7 @@ const Products = () => {
 
   return (
     <div className='Products mt-32'>
-      <div className="Ratio px-32">
+      <div className="PageRatio">
         {/* Top Selling Shoes Section */}
         <div className="TopBar">
           <div className="Titlearea flex items-center justify-between">

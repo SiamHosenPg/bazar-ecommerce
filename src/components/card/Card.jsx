@@ -1,6 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router";
-import { BsCart,BsCartFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 import Ratingstar from './Ratingstar';
 import { MdOutlineShoppingCart } from "react-icons/md";
 

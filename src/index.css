@@ -79,3 +79,45 @@ button, input{
     color: #777;
 }
 
+.PageRatio{
+    width: 1600px;
+    margin: auto;
+}
+
+@media screen and (min-width:1900px){
+    .PageRatio{
+        width: 1600px;
+    }
+}
+
+@media screen and (max-width:1800px){
+    .PageRatio{
+        width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+@media screen and (max-width:1100px){
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+    
+    }
+    .PageRatio{
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+@media screen and (max-width:800px){
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+    
+    }
+    .PageRatio{
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

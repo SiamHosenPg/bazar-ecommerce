@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='Footer px-32 mb-28 mt-32'>
-        <div className="Ratio  bg-indigo-200 px-28 py-16 rounded-xl">
+    <div className='Footer PageRatio '>
+        <div className="  bg-indigo-200 px-28 py-16 rounded-xl mb-20 mt-24">
             <div className="TopFooter flex items-start justify-between">
                 <div className="FLinks flex flex-col gap-2">
                     <div className='mb-3'><b>Our Pages</b></div>

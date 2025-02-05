@@ -15,7 +15,7 @@ const Home = () => {
  
   return (
     <div>
-        <div className="topText h-14 flex items-center justify-between text-gray-500 px-32">
+        <div className="PageRatio hidden topText  h-14 items-center justify-between text-gray-500 sm:hidden md:hidden xl:flex">
             <div className="left">siamhosenpg@gmail.com</div>
             <div className="links flex gap-8 items-center">
                 <div className='flex items-center gap-1' href=""><IoLocationOutline /> Bangladesh</div>

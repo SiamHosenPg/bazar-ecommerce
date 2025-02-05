@@ -8,7 +8,7 @@ const AllProduct = () => {
   return (
     <div>
       <Nav />
-      <div className='block px-32 mt-10'>
+      <div className='PageRatio mt-10'>
         <Card AllproductsData={AllproductsData} />
       </div>
       <Footer />

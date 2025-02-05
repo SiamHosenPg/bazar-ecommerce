@@ -16,8 +16,8 @@ const Header = () => {
         return () => clearInterval(interval);
       }, []);
   return (
-    <div className='Header px-32 mt-14'>
-        <div className="Ratio bg-slate-100 w-full rounded-xl flex items-center justify-between px-11 ps-28 overflow-hidden">
+    <div className='Header PageRatio'>
+        <div className="Ratio bg-slate-100 w-full rounded-xl flex items-center justify-between px-11 ps-28 overflow-hidden mt-14">
             <motion.div
                         key={index}
                         initial={{ opacity: 0,  }}
