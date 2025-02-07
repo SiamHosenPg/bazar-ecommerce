@@ -8,11 +8,21 @@
         position: fixed;
         right: 0;
         top: 80px;
-        display: none;
+        display:none ;
         padding: 40px 40px;
     }
     .Navigation .Pages .link{
         margin-top: 30px;
+    }
+    .Navigation .Pages .BarLogo{
+        display: block;
+    }
+    .Navigation .MenuButton{
+        margin-left: 10px;
+        display: block;
+    }
+    .Navigation .SearchText{
+        display: none;
     }
     .Navigation .Pages li{
         margin-top: 10px;

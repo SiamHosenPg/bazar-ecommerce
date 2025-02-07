@@ -25,7 +25,7 @@ const Header = () => {
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0, delay: 0 }}
 
-            className="Content w-11/12 flex items-center justify-between gap-16">
+                    className="Content w-11/12 flex items-center justify-between gap-16">
                 <div className="LeftTxt w-2/5">
                     <motion.h2
                          initial={{ opacity: 0, y: 50 }}
@@ -54,7 +54,7 @@ const Header = () => {
                         transition={{ duration: 0.4, delay: .4 }}                 
                 className="image w-2/5 h-full"><img className='' src={Headerdata[index].Image} alt="" />
                 </motion.div>
-            </motion.div>
+        </motion.div>
             <div className="NextLoad ">
                 <button onClick={nextData} className='border rounded-full w-10 h-10 border-slate-900 flex items-center justify-center'>
                     <FaAngleRight className='text-xl' />
