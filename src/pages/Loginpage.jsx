@@ -32,7 +32,7 @@ const Loginpage = () => {
                 <p className='mt-3 w-10/12 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facilis totam dolores inventore nesciunt?</p>
                  
                 <Loginform/>
-                <Signupform />
+               
                
             </div>
         </div>
