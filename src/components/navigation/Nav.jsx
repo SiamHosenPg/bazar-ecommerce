@@ -10,7 +10,7 @@ import './Nav.css'
 
 const Nav = () => {
   return (
-    <nav className="Navigation w-full sticky top-0 h-20 border-b bg-white z-50">
+    <nav className="Navigation w-full sticky top-0 h-16 sm:h-[60px] md:h-[60px] xl:h-[78px] border-b bg-white z-50">
         <div className="PageRatio flex items-center justify-between h-full">
             <div className="logo"><NavLink to="/" className='text-3xl font-bold'>Bazar</NavLink></div>
             <ul className="Pages flex items-center justify-center gap-10  font-medium">
