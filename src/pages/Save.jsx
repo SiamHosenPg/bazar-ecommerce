@@ -7,7 +7,9 @@ const Save = () => {
   return (
     <div>
         <Nav />
-        <Saveproducts />
+        <div className='PageRatio'>
+          <Saveproducts />
+        </div>
         <Footer/>
     </div>
   )

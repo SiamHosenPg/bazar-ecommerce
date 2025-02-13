@@ -5,6 +5,7 @@ import { ProductsImages } from "./Allimagedata";
 export const AllproductsData = [
     {
     id: 1,
+    save: true,
     name: "Trendy Running Shoes with Maximum Comfort",
     Category: "shoe",
     discount: 1.4,
@@ -108,6 +109,7 @@ export const AllproductsData = [
     },
     {
       id: 2,
+      save: false,
       name: "Lightweight Running Shoes for Comfort and Performance",
       Category: "shoe",
       discount: 4,
@@ -214,6 +216,7 @@ export const AllproductsData = [
     },
     {
       id: 3,
+      save: true,
       name: "Wireless Noise-Canceling Headphones with Deep Bass",
       Category: "headphone",
       discount: 1.4,
@@ -271,6 +274,7 @@ export const AllproductsData = [
 
     {
       id: 4,
+      save: false,
       name: "Durable Fitness Resistance Shoes for Home Workouts Training",
       category: "shoe",
       discount: 1.1,
@@ -369,12 +373,10 @@ export const AllproductsData = [
         }
       ]
     },
-    
-
-
 
     {
       id: 5,
+      save: false,
       name: "Elegant Summer Maxi Dress with modern style and fashion",
       Category: "dress",
       discount: null,
@@ -485,6 +487,7 @@ export const AllproductsData = [
     },
     {
       id: 6,
+      save: false,
       name: "Hydrating Organic Face Serum for Glowing and Healthy Skin",
       Category: "faceproduct",
       discount: null,
