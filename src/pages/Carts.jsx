@@ -1,20 +1,14 @@
 import React from 'react'
 import Nav from '../components/navigation/Nav'
 import Footer from '../components/footer/Footer'
+import CartItems from '../components/cartitems/CartItems'
 
 const carts = () => {
   return (
     <div>
         <Nav />
-        <div className="CartsAll px-32 mt-32 "> 
-            <div className='Ratio'>
-                <div className="Carts">
-                    <div className="Image"><img src="" alt="" /></div>
-                    <div>Products Name</div>
-                    <div>Hanif Hosen</div>
-                    <div>78$</div>
-                </div>
-            </div>
+        <div className="PageRatio">
+          <CartItems />
         </div>
         <Footer />
     </div>

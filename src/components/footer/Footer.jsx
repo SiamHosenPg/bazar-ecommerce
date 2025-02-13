@@ -42,7 +42,7 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <a className='block mt-9 text-lg font-medium' href="">View more information</a>
+            <a className='block mt-9 font-medium' href="">View more information</a>
         </div>
     </div>
   )

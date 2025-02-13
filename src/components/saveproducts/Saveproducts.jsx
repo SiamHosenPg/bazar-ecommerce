@@ -6,9 +6,9 @@ const Saveproducts = () => {
   const SaveProductsAll = AllproductsData.filter((p) => p.save == true);
   return (
     <div>
-      <h2 className=" mt-14">
+      <h3 className=" mt-14">
         You Save This Items.
-      </h2>
+      </h3>
       <Card AllproductsData={SaveProductsAll} />
     </div>
   )
