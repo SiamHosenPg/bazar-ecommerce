@@ -3,12 +3,12 @@ import Nav from '../components/navigation/Nav'
 import Footer from '../components/footer/Footer'
 import CartItems from '../components/cartitems/CartItems'
 
-const carts = () => {
+const carts = ({ cart, removeFromCart }) => {
   return (
     <div>
         <Nav />
         <div className="PageRatio">
-          <CartItems />
+          <CartItems cart={cart} removeFromCart={removeFromCart}  />
         </div>
         <Footer />
     </div>

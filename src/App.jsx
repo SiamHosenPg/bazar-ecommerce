@@ -13,11 +13,34 @@ import Dressproduct from "./pages/Dressproduct";
 import ScrollToTop from "./components/Scrolltotop";
 import Headphoneproduct from "./pages/Headphoneproduct";
 import Faceproduct from "./pages/Faceproduct";
+import { useState } from "react";
 
 function App() {
 
+  const [cart, setCart] = useState([]);
+
+  // Add product to cart
+  const addToCart = (ProductInfo) => {
+
+    if (cart.includes(ProductInfo)) {
+      alert("Number already added");
+      return;
+    }
+    setCart([...cart, ProductInfo]);
+  };
+
+  // Remove product from cart
+  const removeFromCart = (productId) => {
+    setCart(cart.filter((item) => item.id !== productId));
+  };
+
+
+
+
+
+
   return (
-    <div className="App">
+   
 
       <BrowserRouter>
       <ScrollToTop />
@@ -28,8 +51,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/allproducts" element={<AllProduct />} />
       <Route path="/login" element={<Loginpage />} />
-      <Route path="/allproducts/:id" element={<Productpreview />} />
-      <Route path="/carts" element={<Carts/>} />
+      <Route path="/allproducts/:id" element={<Productpreview addToCart={addToCart} />} />
+      <Route path="/carts" element={<Carts cart={cart} removeFromCart={removeFromCart}  />} />
       <Route path="/save" element={<Save />} />
       <Route path="/shoe" element={<Shoepage />} />
       <Route path="/watch" element={<Watchproduct />} />
@@ -41,8 +64,6 @@ function App() {
       </BrowserRouter>
 
 
-        
-    </div>
   )
 }
 

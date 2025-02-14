@@ -8,7 +8,7 @@ import { NavLink } from 'react-router'
 import Ratingstar from '../components/card/Ratingstar'
 import { useState } from 'react'
 
-const Productpreview = () => {
+const Productpreview = ({ addToCart }) => {
   const { id } = useParams();
   const ProductInfo = AllproductsData.find((p) => p.id === parseInt(id));
   const [PrevewImage, SetPrevewImage] = useState(ProductInfo.filePath);
@@ -64,7 +64,8 @@ const Productpreview = () => {
                               </div>
                               
                               <p className="w-4/5 mt-10 leading-7">{ProductInfo.summaries}</p>
-                              <button className="border mt-5 px-6 py-3 border-slate-600 rounded-sm text-black font-medium">Add To Cart</button>
+                              
+                              <button onClick={() => addToCart(ProductInfo)} className="border mt-5 px-6 py-3 border-slate-600 rounded-sm text-black font-medium">Add To Cart</button>
                               <div className=" mt-10 uppercase font-medium flex justify-start items-center gap-10">Shear on : 
                                 <div className="Icon flex gap-4 font-medium text-xl">
                                   <i className="fa-brands fa-facebook"></i>
