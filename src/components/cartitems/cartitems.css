@@ -1,0 +1,3 @@
+.CartItemsAll .CartItem:last-child{
+    border: none;
+}

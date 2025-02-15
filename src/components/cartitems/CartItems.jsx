@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './cartitems.css'
 import { MdDeleteOutline } from "react-icons/md";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
@@ -21,23 +21,8 @@ const CartItems = ({ cart, removeFromCart }) => {
             {/* Title Table Head Section Closs  */}
 
             {cart && cart.map((Items) => {
-                const [ProductCountData, SetProductCountData] = useState(1);
-                const Increment = () => {
-                    if(ProductCountData < 20){
-                        SetProductCountData(ProductCountData + 1);
-                    }else{
-                        alert("Max Number Selected")
-                    }
-                }
-                const Decrement = () => {
-                    if(ProductCountData < 1){
-                        alert("Minimum Selected")
-                    }else{
-                        SetProductCountData(ProductCountData - 1);
-                    }
-                }
                 return(
-                    <div key={Items.id} className="mt-3 flex justify-between items-center gap-4 border-b py-4">
+                    <div key={Items.id} className="CartItem mt-3 flex justify-between items-center gap-4 border-b py-4">
                     <div className="PdCode flex w-6/12 items-center justify-start gap-5 ">
                         <img className='block aspect-square w-[100px] rounded-md overflow-hidden bg-slate-200 ' src={Items.filePath} alt="" />
                         <div className='w-full'>
@@ -48,9 +33,9 @@ const CartItems = ({ cart, removeFromCart }) => {
                     {/* Product Code Section Closs  */}
                     <div className="quantity w-2/12">
                         <div className=' flex justify-center items-center gap-3 w-fit'>
-                            <div><IoIosAdd onClick={Increment} className='text-xl cursor-pointer'/></div>
-                            <div className='text-lg'>{ProductCountData}</div>
-                            <div><IoIosRemove onClick={Decrement} className='text-xl cursor-pointer' /></div>
+                            <div><IoIosAdd  className='text-xl cursor-pointer'/></div>
+                            <div className='text-lg'>1</div>
+                            <div><IoIosRemove  className='text-xl cursor-pointer' /></div>
                         </div>
                     </div>
                     {/* Quantity Section Closs  */}
