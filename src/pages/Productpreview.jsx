@@ -52,7 +52,7 @@ const Productpreview = ({ addToCart }) => {
                                   <span className=' ml-6 text-2xl font-medium'>{ProductInfo.rating}</span>
                                   <span className='ml-3'>{`${ProductInfo.ratingcount} Peoples`}</span>
                               </div>
-                              <h2 className="Price mt-6 font-semibold">{ProductInfo.price} <span className=' font-medium'>$</span> <span className='font-normal text-sm'>Price</span></h2>
+                              <h2 className="Price mt-6 font-semibold">{ProductInfo.price} <span className=' font-medium'>$</span> <del className=' text-xl mr-3 text-[#777]'>{ProductInfo.startingprice}</del><span className='font-normal text-sm'>Price</span></h2>
                               <div className="mt-3 flex justify-start items-center gap-3">
                                 <div className=' uppercase'>Color</div>
                                 <i className="fa-solid fa-angle-right text-sm"></i>

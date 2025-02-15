@@ -18,7 +18,7 @@ const Card = ({AllproductsData}) => {
             return(
               <NavLink key={index} to={`/AllProducts/${item.id}`} className='block border hover:border-[#bbb] rounded-xl'>
               <div style={ item.discount == null ?  DesibleDiscount : ShowDiscount} className="Discount absolute bg-green-700 text-white w-[100px] text-center z-20 py-1 mt-10 ml-[-10px] rounded-sm">
-                <span className='text-lg font-medium'>{item.discount}%</span> <span className='text-sm'>Save</span>
+                <span className='text-lg font-medium'>{item.discount}</span>% <span className='text-sm'>Save</span>
               </div>
             <div className="Card  duration-300 overflow-hidden pb-6">
               <div className='Imgs m-3 bg-slate-50 flex items-center justify-center aspect-square rounded-lg overflow-hidden'>
@@ -33,7 +33,7 @@ const Card = ({AllproductsData}) => {
                 <div className='text-sm'>{item.rating}</div>
               </div>
               <div className="Order flex items-center justify-between mt-3 px-8">
-                <h4>{item.price} <span className='text-lg'>$</span></h4>
+                <h4>{item.price} <span className='text-lg'>$</span> <del className='text-sm ml-2 text-[#777]'>{item.startingprice}</del></h4>
                 <MdOutlineShoppingCart className='text-xl' />
               </div>
             </div>
