@@ -114,10 +114,17 @@ button, input{
     }
 }
 @media screen and (max-width:800px){
+    body{
+        font-size: 14px;
+        color: #444;
+    }
     h2{
         font-size: 21px;
         font-weight: 700;
     
+    }
+    h3{
+        font-size: 18px;
     }
     .PageRatio{
         width: 100%;
@@ -125,3 +132,16 @@ button, input{
         padding-right: 3%;
     }
 }
+@media screen and (max-width:640px){
+    h4{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:400px){
+    .ProductList .StartingPrice{
+        display: none;
+    }
+}
+
+
+

@@ -12,6 +12,14 @@ const Productpreview = ({ addToCart }) => {
   const { id } = useParams();
   const ProductInfo = AllproductsData.find((p) => p.id === parseInt(id));
   const [PrevewImage, SetPrevewImage] = useState(ProductInfo.filePath);
+  
+  // Starting Add to cart button 
+  const [AddToCardCss, SetAddToCardCss] = useState(null)
+    const AddToCartClick = () => {
+      addToCart(ProductInfo);
+      SetAddToCardCss("ActiveInCart")
+    }
+  // Clossing add to cart button function
   return (
     <div>
         <Nav />
@@ -65,7 +73,7 @@ const Productpreview = ({ addToCart }) => {
                               
                               <p className="w-4/5 mt-10 leading-7">{ProductInfo.summaries}</p>
                               
-                              <button onClick={() => addToCart(ProductInfo)} className="border mt-5 px-6 py-3 border-slate-600 rounded-sm text-black font-medium">Add To Cart</button>
+                              <button onClick={AddToCartClick } className={`${AddToCardCss} border mt-5 px-6 py-3 border-slate-600 rounded-sm text-black font-medium`}>Add To Cart</button>
                               <div className=" mt-10 uppercase font-medium flex justify-start items-center gap-10">Shear on : 
                                 <div className="Icon flex gap-4 font-medium text-xl">
                                   <i className="fa-brands fa-facebook"></i>

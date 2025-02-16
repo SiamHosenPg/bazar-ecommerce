@@ -23,7 +23,7 @@ function App() {
   const addToCart = (ProductInfo) => {
 
     if (cart.includes(ProductInfo)) {
-      alert("Number already added");
+      alert("The product in the cart");
       return;
     }
     setCart([...cart, ProductInfo]);

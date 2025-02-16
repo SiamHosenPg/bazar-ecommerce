@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='Footer PageRatio '>
-        <div className="  bg-indigo-200 px-28 py-16 rounded-xl mb-20 mt-24">
-            <div className="TopFooter flex items-start justify-between">
-                <div className="FLinks flex flex-col gap-2">
+        <div className="px-10 py-10   bg-indigo-200 xl:px-28 xl:py-16 rounded-xl mb-20 mt-24">
+            <div className="TopFooter grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  ">
+                <div className="FLinks hidden flex-col gap-2 sm:hidden md:hidden lg:hidden xl:flex ">
                     <div className='mb-3'><b>Products</b></div>
                     <a href="">Featured Products</a>
                     <a href="">Trending Now</a>
@@ -14,7 +14,7 @@ const Footer = () => {
                     <a href="">Gift Sets</a>
                     
                 </div>
-                <div className="FLinks flex flex-col gap-2">
+                <div className="FLinks  flex-col gap-2  hidden sm:hidden md:hidden lg:flex xl:flex ">
                     <div className='mb-3'><b>Information</b></div>
                     <a href="">About Our Company</a>
                     <a href="">Privacy Policy</a>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <a href="">Order Help</a>
                     
                 </div>
-                <div className="FLinks flex flex-col gap-2">
+                <div className="FLinks flex flex-col gap-2 ">
                     <div className='mb-3'><b>Stay Connected</b></div>
                     <a href="">Newsletter Sign-Up</a>
                     <a href="">Blog Updates</a>
