@@ -13,7 +13,7 @@ const Card = ({AllproductsData}) => {
 
   return (
       <div className='block'>
-        <div className="ProductList mt-10   gap-1 sm:gap-4 md:gap-6 lg:gap-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 ">
+        <div className="ProductList mt-5 sm:mt-5 md:mt-8 lg:mt-10   gap-1 sm:gap-4 md:gap-6 lg:gap-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 ">
           {AllproductsData && AllproductsData.map((item, index) =>{
             return(
           <NavLink key={index} to={`/AllProducts/${item.id}`} className='block border hover:border-[#bbb] rounded-none sm:rounded-xl'>

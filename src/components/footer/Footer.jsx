@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='Footer PageRatio '>
-        <div className="px-10 py-10   bg-indigo-200 xl:px-28 xl:py-16 rounded-xl mb-20 mt-24">
+        <div className="bg-indigo-200 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-10 sm:py-10 md:py-12 xl:py-16 rounded-xl mb-20 mt-24">
             <div className="TopFooter grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  ">
                 <div className="FLinks hidden flex-col gap-2 sm:hidden md:hidden lg:hidden xl:flex ">
                     <div className='mb-3'><b>Products</b></div>
@@ -42,7 +42,7 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <a className='block mt-9 font-medium' href="">View more information</a>
+            <a className='block text-sm sm:text-[14px] mt-9 font-medium' href="">View more information</a>
         </div>
     </div>
   )

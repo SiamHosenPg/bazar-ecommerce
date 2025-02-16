@@ -16,8 +16,8 @@ const Header = () => {
         return () => clearInterval(interval);
       }, []);
   return (
-    <div className='Header PageRatio'>
-        <div className="Ratio bg-slate-100 w-full rounded-xl flex items-center justify-between px-11 ps-28 overflow-hidden mt-14">
+    <div className='Header PageRatio h-[700px] sm:h-[800px] md:h-[460px] lg:h-[500px] xl:h-[600px]'>
+        <div className=" h-full bg-slate-100 w-full rounded-xl flex items-center justify-between px-8 sm:px-11 md:px-11 ps-8 sm:ps-11 md:ps-16 xl:ps-28 overflow-hidden mt-4 sm:mt-4 md:mt-10 lg:mt-14">
             <motion.div
                         key={index}
                         initial={{ opacity: 0,  }}
@@ -25,12 +25,13 @@ const Header = () => {
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0, delay: 0 }}
 
-                    className="Content w-11/12 flex items-center justify-between gap-16">
-                <div className="LeftTxt w-2/5">
+                    className="Content w-full  sm:w-full md:w-full lg:w-11/12 flex flex-col-reverse sm:flex-col-reverse md:flex-row items-center justify-between gap-8 sm:gap-10 md:gap-16">
+                <div className="LeftTxt w-full sm:w-full md:w-3/5 lg:w-6/12 xl:2/5">
                     <motion.h2
                          initial={{ opacity: 0, y: 50 }}
                          animate={{ opacity: 1, y: 0 }}
                          transition={{ duration: 0.4, delay: .8 }}
+                         className='p-ellipsetext'
                     >{Headerdata[index].Name}</motion.h2>
 
 
@@ -38,7 +39,7 @@ const Header = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.1 }}                        
-                    className='mt-8 leading-7'>{Headerdata[index].text}
+                    className='p-ellipsetextHeader mt-8 leading-7'>{Headerdata[index].text}
                     </motion.p>
                     <NavLink to={`/${Headerdata[index].categories}`}>
                     <motion.div 
@@ -52,10 +53,10 @@ const Header = () => {
                         initial={{ opacity: 0, x: 150 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.4, delay: .4 }}                 
-                className="image w-2/5 h-full"><img className='' src={Headerdata[index].Image} alt="" />
+                className="image w-4/6 sm:w-4/6 md:w-2/5 h-full"><img className='' src={Headerdata[index].Image} alt="" />
                 </motion.div>
-        </motion.div>
-            <div className="NextLoad ">
+            </motion.div>
+            <div className="NextLoad hidden sm:hidden md:hidden lg:block ">
                 <button onClick={nextData} className='border rounded-full w-10 h-10 border-slate-900 flex items-center justify-center'>
                     <FaAngleRight className='text-xl' />
                 </button>

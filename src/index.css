@@ -25,6 +25,12 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.p-ellipsetextHeader{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 
 
@@ -135,6 +141,9 @@ button, input{
 @media screen and (max-width:640px){
     h4{
         font-size: 18px;
+    }
+    .Footer .TopFooter{
+        font-size: 11px;
     }
 }
 @media screen and (max-width:400px){
