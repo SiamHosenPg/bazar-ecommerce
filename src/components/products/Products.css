@@ -1,8 +1,7 @@
-.Gift{
-    margin-left: -120px;
-    margin-top: -10px;
-    
+.Gift {
+  margin-left: -120px;
+  margin-top: -10px;
 }
-.ActiveInCart{
-    opacity: .4;
+.ActiveInCart {
+  opacity: 0.4;
 }

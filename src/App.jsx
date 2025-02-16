@@ -1,6 +1,5 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import About from "./pages/About";
 import AllProduct from "./pages/AllProduct";
 import Loginpage from "./pages/Loginpage";
@@ -16,12 +15,10 @@ import Faceproduct from "./pages/Faceproduct";
 import { useState } from "react";
 
 function App() {
-
   const [cart, setCart] = useState([]);
 
   // Add product to cart
   const addToCart = (ProductInfo) => {
-
     if (cart.includes(ProductInfo)) {
       alert("The product in the cart");
       return;
@@ -34,37 +31,32 @@ function App() {
     setCart(cart.filter((item) => item.id !== productId));
   };
 
-
-
-
-
-
   return (
-   
-
-      <BrowserRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
-       
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/allproducts" element={<AllProduct />} />
-      <Route path="/login" element={<Loginpage />} />
-      <Route path="/allproducts/:id" element={<Productpreview addToCart={addToCart} />} />
-      <Route path="/carts" element={<Carts cart={cart} removeFromCart={removeFromCart}  />} />
-      <Route path="/save" element={<Save />} />
-      <Route path="/shoe" element={<Shoepage />} />
-      <Route path="/watch" element={<Watchproduct />} />
-      <Route path="/dress" element={<Dressproduct />} />
-      <Route path="/headphones" element={<Headphoneproduct />} />
-      <Route path="/faceproduct" element={<Faceproduct />} />
-
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/allproducts" element={<AllProduct />} />
+        <Route path="/login" element={<Loginpage />} />
+        <Route
+          path="/allproducts/:id"
+          element={<Productpreview addToCart={addToCart} />}
+        />
+        <Route
+          path="/carts"
+          element={<Carts cart={cart} removeFromCart={removeFromCart} />}
+        />
+        <Route path="/save" element={<Save />} />
+        <Route path="/shoe" element={<Shoepage />} />
+        <Route path="/watch" element={<Watchproduct />} />
+        <Route path="/dress" element={<Dressproduct />} />
+        <Route path="/headphones" element={<Headphoneproduct />} />
+        <Route path="/faceproduct" element={<Faceproduct />} />
       </Routes>
-      </BrowserRouter>
-
-
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
