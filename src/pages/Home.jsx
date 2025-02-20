@@ -1,18 +1,14 @@
 import React from "react";
-
-import Nav from "../components/navigation/Nav";
 import Header from "../components/header/Header";
 import Categories from "../components/topcategories/Categories";
-import Footer from "../components/footer/Footer";
 import Products from "../components/products/Products";
-
 import { IoLocationOutline } from "react-icons/io5";
 import { GiWorld } from "react-icons/gi";
 
 const Home = () => {
   return (
     <div>
-      <div className="PageRatio hidden topText  h-14 items-center justify-between text-gray-500 sm:hidden md:hidden xl:flex">
+      <div className="PageRatio pt-6 hidden topText items-center justify-between text-gray-500 sm:hidden md:hidden xl:flex">
         <div className="left">siamhosenpg@gmail.com</div>
         <div className="links flex gap-8 items-center">
           <div className="flex items-center gap-1" href="">
@@ -25,11 +21,10 @@ const Home = () => {
           <div href="">Developer Contruct</div>
         </div>
       </div>
-      <Nav />
+
       <Header />
       <Categories />
       <Products />
-      <Footer />
     </div>
   );
 };

@@ -1,5 +1,3 @@
-import Nav from "../components/navigation/Nav";
-import Footer from "../components/footer/Footer";
 import { useParams } from "react-router";
 import { AllproductsData } from "../assets/Allproductsdata";
 import { ProfileImage } from "../assets/Profileiamge";
@@ -22,7 +20,6 @@ const Productpreview = ({ addToCart }) => {
   // Clossing add to cart button function
   return (
     <div>
-      <Nav />
       <div className="PageRatio">
         <div className="px-6 sm:px-6 md:px-0 TopNavigation flex flex-col sm:flex-col md:flex-row items-start  justify-start gap-2 sm:gap-3 md:gap-6 mt-10">
           <NavLink
@@ -247,8 +244,6 @@ const Productpreview = ({ addToCart }) => {
         </div>
         {/* Body Product Information Section */}
       </div>
-
-      <Footer />
     </div>
   );
 };

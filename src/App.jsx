@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import AllProduct from "./pages/AllProduct";
@@ -13,6 +13,8 @@ import ScrollToTop from "./components/Scrolltotop";
 import Headphoneproduct from "./pages/Headphoneproduct";
 import Faceproduct from "./pages/Faceproduct";
 import { useState } from "react";
+import Nav from "./components/navigation/Nav";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -32,8 +34,9 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <Router>
       <ScrollToTop />
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Home />} />
@@ -55,7 +58,8 @@ function App() {
         <Route path="/headphones" element={<Headphoneproduct />} />
         <Route path="/faceproduct" element={<Faceproduct />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </Router>
   );
 }
 

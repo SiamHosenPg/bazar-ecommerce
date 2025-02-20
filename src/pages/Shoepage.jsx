@@ -8,11 +8,9 @@ const Shoepage = () => {
   const ShoeProducts = AllproductsData.filter((p) => p.Category == "shoe");
   return (
     <div>
-      <Nav />
       <div className=" px-32">
         <Card AllproductsData={ShoeProducts} />
       </div>
-      <Footer />
     </div>
   );
 };
