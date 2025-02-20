@@ -55,6 +55,7 @@ const Productpreview = ({ addToCart }) => {
                       className=" aspect-square hover:scale-[1.1] duration-300"
                       src={Imageitems.ExtImage}
                       alt=""
+                      loading="lazy"
                     />
                   </div>
                 );
@@ -69,6 +70,7 @@ const Productpreview = ({ addToCart }) => {
                   className=" aspect-square w-full  hover:scale-[1.1] duration-300"
                   src={PrevewImage}
                   alt=""
+                  loading="lazy"
                 />
               </div>
 
@@ -179,6 +181,7 @@ const Productpreview = ({ addToCart }) => {
                                   className="h-full bg-slate-900 w-full rounded-full"
                                   src={UserData.ProfileImg}
                                   alt=""
+                                  loading="lazy"
                                 />
                               </div>
                               <div className="txt">

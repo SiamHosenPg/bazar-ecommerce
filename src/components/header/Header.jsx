@@ -19,10 +19,6 @@ const Header = () => {
       <div className=" h-full bg-slate-100 w-full rounded-xl flex items-center justify-between px-8 sm:px-11 md:px-11 ps-8 sm:ps-11 md:ps-16 xl:ps-28 overflow-hidden mt-4 sm:mt-4 md:mt-10 lg:mt-14">
         <motion.div
           key={index}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 0, delay: 0 }}
           className="Content w-full  sm:w-full md:w-full lg:w-11/12 flex flex-col-reverse sm:flex-col-reverse md:flex-row items-center justify-between gap-8 sm:gap-10 md:gap-16"
         >
           <div className="LeftTxt w-full sm:w-full md:w-3/5 lg:w-6/12 xl:2/5">
@@ -60,13 +56,18 @@ const Header = () => {
             transition={{ duration: 0.4, delay: 0.4 }}
             className="image w-4/6 sm:w-4/6 md:w-2/5 h-full"
           >
-            <img className="" src={Headerdata[index].Image} alt="" />
+            <img
+              className=""
+              src={Headerdata[index].Image}
+              alt={Headerdata[index].Name}
+              loading="lazy"
+            />
           </motion.div>
         </motion.div>
         <div className="NextLoad hidden sm:hidden md:hidden lg:block ">
           <button
             onClick={nextData}
-            className="border rounded-full w-10 h-10 border-slate-900 flex items-center justify-center"
+            className="border rounded-full w-10 h-10 border-[#999] text-[#555] flex items-center justify-center"
           >
             <FaAngleRight className="text-xl" />
           </button>

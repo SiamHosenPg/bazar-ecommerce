@@ -11,7 +11,12 @@ const Aboutcontent = () => {
           A valuable photo taken at the company's inception.
         </i>
         <div className="Image h-[490px] overflow-hidden w-full rounded-md mt-8">
-          <img className="h-full w-full" src={TeamImage.TeamImage1} alt="" />
+          <img
+            className="h-full w-full"
+            src={TeamImage.TeamImage1}
+            alt=""
+            loading="lazy"
+          />
         </div>
         <p className="mt-16 leading-6 sm:leading-6 2xl:leading-8 text-[13px] sm:text-[13px] 2xl:text-lg">
           Our journey began with a simple idea and a shared passion for
@@ -44,6 +49,7 @@ const Aboutcontent = () => {
               className=" aspect-square "
               src={TeamImage.TeamImageAlisa}
               alt=""
+              loading="lazy"
             />
           </div>
           <div className="Text w-full">

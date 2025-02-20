@@ -44,6 +44,7 @@ const CartItems = ({ cart, removeFromCart }) => {
                           className="block aspect-square w-[100px] rounded-md overflow-hidden bg-slate-200 "
                           src={Items.filePath}
                           alt=""
+                          loading="lazy"
                         />
                         <div className="w-full">
                           <b className="p-ellipsetext block w-full sm:w-full md:w-5/6 lg:w-full xl:w-5/6 ">

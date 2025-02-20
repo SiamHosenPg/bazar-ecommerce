@@ -33,25 +33,26 @@ const Nav = () => {
             <NavLink to="/about">About Us</NavLink>
           </li>
         </ul>
-        <div className="Buttons flex gap-4 text-xl">
-          <button className="flex items-center gap-2">
-            <IoSearch />{" "}
-            <span className="SearchText text-sm  sm:hidden md:block xl:block">
-              Search
-            </span>
-          </button>
-
+        <div className="Buttons flex gap-4 text-lg items-center">
           <NavLink to="/login">
             <CgProfile />
           </NavLink>
-
           <NavLink to="/save">
             <FaRegHeart />
           </NavLink>
-
           <NavLink to="/carts">
             <MdOutlineShoppingCart />
           </NavLink>
+          <form className="Inputbox flex gap-1 border border-[#666] rounded-full overflow-hidden">
+            <input
+              className="border-none rounded-md px-4  py-2 text-sm"
+              type="text"
+              placeholder="Search Product"
+            />
+            <button className="flex items-center gap-2 ml-[-5px] w-7">
+              <IoSearch className="" />{" "}
+            </button>
+          </form>
 
           <FaBarsStaggered className="MenuButton font-semibold text-xl hidden" />
         </div>

@@ -37,6 +37,7 @@ const Card = ({ AllproductsData }) => {
                       className="object-cover aspect-square duration-300 hover:scale-[1.1]"
                       src={item.filePath}
                       alt={item.name}
+                      loading="lazy"
                     />
                   </div>
                   <div className="line-ellipsetext text-[10px] sm:text-sm mt-4 sm:mt-6 px-5 sm:px-8">
