@@ -1,11 +1,10 @@
-import React from "react";
 import { TeamImage } from "../../assets/TeamIamge";
-
 const Aboutcontent = () => {
   return (
     <div className="w-full sm:w-full md:w-full lg:w-9/12  mt-12 sm:mt-12 lg:mt-16">
       <div className="SectionFirst">
         <div className="mb-3 text-lg font-medium">About</div>
+
         <h2 className="w-4/6">Started this journey.</h2>
         <i className="mt-4 sm:mt-4 lg:mt-10 block">
           A valuable photo taken at the company's inception.

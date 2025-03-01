@@ -1,0 +1,378 @@
+[
+  {
+    "id": 1,
+    "save": true,
+    "name": "Trendy Running Shoes with Maximum Comfort",
+    "Category": "shoe",
+    "discount": 1.4,
+    "startingprice": 27.5,
+    "sellcount": 435,
+    "author": "Michael Johnson",
+    "rating": 4.5,
+    "ratingcount": 94,
+    "star": 5,
+    "filePath": "../../../public/image/product/shoe/id2/shoe1.jpg",
+    "price": 25.99,
+    "summaries": "Experience all-day comfort with these stylish running shoes, featuring breathable material and a cushioned sole for superior support.",
+    "description": "Step up your game with our trendy running shoes designed for athletes and casual wearers alike. These shoes feature a breathable upper for ventilation, a cushioned midsole for shock absorption, and a durable outsole for excellent traction. Whether you're hitting the gym, going for a run, or just walking around town, these sneakers ensure comfort and style in every step.",
+    "size": "Available in multiple sizes",
+    "colors": ["Red", "Blue", "Green", "Black"],
+    "semple": "ProductsImages.Shoemap",
+    "imageSources": [
+      {
+        "ExtImage": "../../../public/image/product/shoe/id2/shoe1.jpg"
+      },
+      {
+        "ExtImage": "../../../public/image/product/shoe/id2/show2.jpg"
+      }
+    ],
+    "benefits": [
+      "Breathable mesh fabric for enhanced airflow.",
+      "Shock-absorbing midsole for extra comfort.",
+      "Durable rubber outsole for superior grip.",
+      "Lightweight design to reduce foot fatigue.",
+      "Stylish and versatile for casual or athletic use."
+    ],
+    "productReviews": [
+      {
+        "Name": "John Doe",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/john.jpg",
+        "ReviewText": "These shoes are incredibly comfortable! Perfect for running and daily use.",
+        "rating": 5,
+        "Userid": "user123",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you, John! We're happy you're enjoying the comfort and quality."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "I got a pair too! They're super lightweight."
+          }
+        ]
+      },
+      {
+        "Name": "Jane Smith",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/jane.jpg",
+        "ReviewText": "Love these sneakers! They fit perfectly and feel great for long walks.",
+        "rating": 4,
+        "Userid": "user456",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thanks, Jane! We appreciate your feedback."
+          }
+        ]
+      },
+      {
+        "Name": "Alice Johnson",
+        "date": "9 July 2012",
+        "imageLink": "https://example.com/images/alice.jpg",
+        "ReviewText": "Very stylish and comfortable shoes. I wear them every day!",
+        "rating": 5,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "We're thrilled to hear that, Alice!"
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I need to get a pair soon!"
+          }
+        ]
+      },
+      {
+        "Name": "Bob Brown",
+        "date": "3 July 2012",
+        "imageLink": "https://example.com/images/bob.jpg",
+        "ReviewText": "Good grip and comfortable for jogging. Would recommend!",
+        "rating": 4.5,
+        "Userid": "user101",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you, Bob! We're glad you're satisfied."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "I use mine for jogging too, love them!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "save": false,
+    "name": "Lightweight Running Shoes for Comfort and Performance",
+    "Category": "shoe",
+    "discount": 4,
+    "startingprice": 33.8,
+    "sellcount": 831,
+    "author": "Rakib Hossain",
+    "rating": 4.0,
+    "ratingcount": 79,
+    "star": 4,
+    "filePath": "../../../public/image/product/shoe/id1/1.avif",
+    "price": 30.99,
+    "summaries": "Experience ultimate comfort and style with these lightweight running shoes, featuring breathable mesh fabric, shock-absorbing soles, and a flexible design for all-day wear.",
+    "description": "Designed for athletes and casual wearers alike, these lightweight running shoes offer superior comfort and support. The breathable mesh upper ensures ventilation, while the cushioned insole and shock-absorbing outsole reduce strain on your feet. Whether you're hitting the gym, jogging, or simply walking around, these shoes provide the perfect blend of style and performance.",
+    "size": "Available in multiple sizes",
+    "colors": ["Red", "Blue", "Green", "Black"],
+    "semple": "../../../public/image/product/shoe/id1/map.jpg",
+    "imageSources": [
+      {
+        "ExtImage": "../../../public/image/product/shoe/id1/1.avif"
+      },
+      {
+        "ExtImage": "../../../public/image/product/shoe/id1/2.avif"
+      },
+      {
+        "ExtImage": "../../../public/image/product/shoe/id1/3.avif"
+      }
+    ],
+    "benefits": [
+      "Breathable mesh upper for all-day freshness.",
+      "Shock-absorbing soles for reduced impact.",
+      "Lightweight design for effortless movement.",
+      "Slip-resistant outsole for better grip.",
+      "Perfect for running, walking, and casual wear."
+    ],
+    "productReviews": [
+      {
+        "Name": "John Doe",
+        "date": "8 August 2012",
+        "imageLink": "https://example.com/images/john.jpg",
+        "ReviewText": "These running shoes are super comfortable! They fit perfectly, and the cushioning is great for long runs.",
+        "rating": 5,
+        "Userid": "user123",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you for your feedback, John! We're glad you love the comfort and support."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "I agree! The cushioning really makes a difference."
+          }
+        ]
+      },
+      {
+        "Name": "Jane Smith",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/jane.jpg",
+        "ReviewText": "Perfect shoes for my morning walks! They're lightweight and super breathable.",
+        "rating": 4,
+        "Userid": "user456",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thanks, Jane! Happy to hear they work well for your daily routine."
+          }
+        ]
+      },
+      {
+        "Name": "Alice Johnson",
+        "date": "18 July 2012",
+        "imageLink": "https://example.com/images/alice.jpg",
+        "ReviewText": "Very comfortable for long hours. I wear them to work, and my feet don't hurt anymore!",
+        "rating": 5,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "We're thrilled to hear that, Alice! Comfort is our priority."
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I need a pair for work too. Thanks for the review!"
+          }
+        ]
+      },
+      {
+        "Name": "Bob Brown",
+        "date": "8 July 2022",
+        "imageLink": "https://example.com/images/bob.jpg",
+        "ReviewText": "Great grip and support. I've used these for jogging, and they perform really well.",
+        "rating": 4.5,
+        "Userid": "user101",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you, Bob! We're glad they meet your expectations for jogging."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "Same here! The grip is fantastic."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "save": true,
+    "name": "Wireless Noise-Canceling Headphones with Deep Bass",
+    "Category": "headphone",
+    "discount": 1.4,
+    "startingprice": 20.6,
+    "sellcount": 435,
+    "author": "Rahim Ahmed",
+    "rating": 3.8,
+    "ratingcount": 42,
+    "star": 3,
+    "filePath": "../../../public/image/product/earphone/headphone/headphone2.jpg",
+    "price": 19.99,
+    "summaries": "Experience immersive sound with these wireless noise-canceling headphones, featuring deep bass, a 20-hour battery life, and a comfortable over-ear design.",
+    "description": "These wireless headphones are designed for premium sound quality with powerful noise cancellation to block unwanted background noise. Equipped with deep bass technology, crystal-clear audio, and a comfortable fit, they are perfect for long listening sessions. The 20-hour battery life ensures uninterrupted music playback, making them ideal for travel, work, and gaming.",
+    "size": "Standard Fit",
+    "colors": ["Red", "Blue", "Green", "Black"],
+    "semple": "../../../public/image/product/earphone/headphone/map.avif",
+    "imageSources": [
+      {
+        "ExtImage": "../../../public/image/product/earphone/headphone/headphone1.jpg"
+      },
+      {
+        "ExtImage": "../../../public/image/product/earphone/headphone/headphone2.jpg"
+      },
+      {
+        "ExtImage": "../../../public/image/product/earphone/headphone/headphone3.jpg"
+      }
+    ],
+    "benefits": [
+      "Advanced noise-canceling technology for an immersive experience.",
+      "Deep bass and clear treble for high-quality sound.",
+      "Ergonomic design for all-day comfort.",
+      "20-hour battery life with fast charging support.",
+      "Wireless Bluetooth connectivity for seamless pairing."
+    ],
+    "productReviews": [
+      {
+        "Name": "John Doe",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/john.jpg",
+        "ReviewText": "This wireless headphone is amazing! The sound quality is top-notch, and the battery life lasts all day.",
+        "rating": 5,
+        "Userid": "user123",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you for your feedback, John! We're glad you're enjoying the headphones."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "I agree, the sound quality is incredible!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "save": false,
+    "name": "Durable Fitness Resistance Shoes for Home Workouts Training",
+    "category": "shoe",
+    "discount": 1.1,
+    "startingprice": 41.2,
+    "sellcount": 75,
+    "author": "Mehzabin Chowdhury & Co.",
+    "rating": 4.7,
+    "ratingcount": 982,
+    "star": 5,
+    "filePath": "../../../public/image/product/shoe/id3/shoe1.png",
+    "price": 40.99,
+    "summaries": "These durable fitness shoes provide ultimate support for your home workouts, offering comfort and flexibility for every movement.",
+    "description": "These fitness shoes are designed to enhance your performance with superior comfort, breathable material, and a non-slip sole, making them ideal for various workouts at home or the gym.",
+    "size": "8, 9, 10, 11",
+    "colors": ["Red", "Blue", "Green", "Black"],
+    "semple": "../../../public/image/product/shoe/id3/map.jpg",
+    "imageSources": [
+      {
+        "ExtImage": "../../../public/image/product/shoe/id3/shoe1.png"
+      },
+      {
+        "ExtImage": "../../../public/image/product/shoe/id3/shoe2.jpg"
+      }
+    ],
+    "benefits": [
+      "Breathable mesh design for optimal airflow.",
+      "Durable, non-slip soles for better traction.",
+      "Flexible and lightweight, perfect for workouts.",
+      "Shock absorption for added comfort during high-impact exercises.",
+      "Stylish and versatile, suitable for various activities."
+    ],
+    "productReviews": [
+      {
+        "Name": "John Doe",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/john.jpg",
+        "ReviewText": "These fitness shoes are fantastic! They provide great support and are comfortable for long workout sessions.",
+        "rating": 5,
+        "Userid": "user123",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you for your feedback, John! We're glad you're enjoying the shoes."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "I agree, they are super comfortable and supportive!"
+          }
+        ]
+      },
+      {
+        "Name": "Jane Smith",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/jane.jpg",
+        "ReviewText": "These shoes are perfect for my morning runs. They're light and durable, making them ideal for outdoor workouts.",
+        "rating": 4,
+        "Userid": "user456",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thanks, Jane! We're happy to hear they fit your running needs."
+          }
+        ]
+      },
+      {
+        "Name": "Alice Johnson",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/alice.jpg",
+        "ReviewText": "The shoes are great for indoor exercises. They provide the support I need for my daily routines.",
+        "rating": 5,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "We're thrilled to hear that, Alice! Comfort is our top priority."
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I've been thinking about getting a pair too. Thanks for the review!"
+          }
+        ]
+      },
+      {
+        "Name": "Bob Brown",
+        "date": "8 July 2012",
+        "imageLink": "https://example.com/images/bob.jpg",
+        "ReviewText": "The shoes are perfect for my fitness routine. They're durable and provide great grip during my exercises.",
+        "rating": 4.5,
+        "Userid": "user101",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you, Bob! We're glad they help with your fitness activities."
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "I love mine too! They are so comfortable for every workout."
+          }
+        ]
+      }
+    ]
+  }
+]

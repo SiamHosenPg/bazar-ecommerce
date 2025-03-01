@@ -55,7 +55,7 @@ const Card = ({ AllproductsData }) => {
                   <div className="Order flex items-center justify-between mt-3 px-5 sm:px-8">
                     <h4>
                       {item.price} <span className="text-lg">$</span>{" "}
-                      <del className="StartingPrice text-sm ml-2 text-[#777]">
+                      <del className="StartingPrice text-sm ml-2 text-[#acacac]">
                         {item.startingprice}
                       </del>
                     </h4>

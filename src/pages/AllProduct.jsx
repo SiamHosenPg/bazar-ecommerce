@@ -1,12 +1,13 @@
-import React from "react";
-import { AllproductsData } from "../assets/Allproductsdata";
+import React, { useContext } from "react";
 import Card from "../components/card/Card";
+import { ProductData } from "../assets/contextapi/ContextApp";
 
 const AllProduct = () => {
+  const { ProductsData } = useContext(ProductData);
   return (
     <div>
       <div className="PageRatio mt-10">
-        <Card AllproductsData={AllproductsData} />
+        <Card AllproductsData={ProductsData} />
       </div>
     </div>
   );

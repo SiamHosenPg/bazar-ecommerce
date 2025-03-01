@@ -15,6 +15,7 @@ import Faceproduct from "./pages/Faceproduct";
 import { useState } from "react";
 import Nav from "./components/navigation/Nav";
 import Footer from "./components/footer/Footer";
+import { ProductDataProvider } from "./assets/contextapi/ContextApp";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -34,32 +35,34 @@ function App() {
   };
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/allproducts" element={<AllProduct />} />
-        <Route path="/login" element={<Loginpage />} />
-        <Route
-          path="/allproducts/:id"
-          element={<Productpreview addToCart={addToCart} />}
-        />
-        <Route
-          path="/carts"
-          element={<Carts cart={cart} removeFromCart={removeFromCart} />}
-        />
-        <Route path="/save" element={<Save />} />
-        <Route path="/shoe" element={<Shoepage />} />
-        <Route path="/watch" element={<Watchproduct />} />
-        <Route path="/dress" element={<Dressproduct />} />
-        <Route path="/headphones" element={<Headphoneproduct />} />
-        <Route path="/faceproduct" element={<Faceproduct />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <ProductDataProvider>
+      <Router>
+        <ScrollToTop />
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/allproducts" element={<AllProduct />} />
+          <Route path="/login" element={<Loginpage />} />
+          <Route
+            path="/allproducts/:id"
+            element={<Productpreview addToCart={addToCart} />}
+          />
+          <Route
+            path="/carts"
+            element={<Carts cart={cart} removeFromCart={removeFromCart} />}
+          />
+          <Route path="/save" element={<Save />} />
+          <Route path="/shoe" element={<Shoepage />} />
+          <Route path="/watch" element={<Watchproduct />} />
+          <Route path="/dress" element={<Dressproduct />} />
+          <Route path="/headphones" element={<Headphoneproduct />} />
+          <Route path="/faceproduct" element={<Faceproduct />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ProductDataProvider>
   );
 }
 

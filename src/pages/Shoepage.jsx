@@ -1,11 +1,10 @@
-import React from "react";
-import Nav from "../components/navigation/Nav";
-import Footer from "../components/footer/Footer";
+import React, { useContext } from "react";
 import Card from "../components/card/Card";
-import { AllproductsData } from "../assets/Allproductsdata";
+import { ProductData } from "../assets/contextapi/ContextApp";
 
 const Shoepage = () => {
-  const ShoeProducts = AllproductsData.filter((p) => p.Category == "shoe");
+  const { ProductsData } = useContext(ProductData);
+  const ShoeProducts = ProductsData.filter((p) => p.Category == "shoe");
   return (
     <div>
       <div className=" px-32">

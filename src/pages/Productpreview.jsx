@@ -1,14 +1,15 @@
 import { useParams } from "react-router";
-import { AllproductsData } from "../assets/Allproductsdata";
+import { ProductData } from "../assets/contextapi/ContextApp";
 import { ProfileImage } from "../assets/Profileiamge";
 import { NavLink } from "react-router";
 import Ratingstar from "../components/card/Ratingstar";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
 const Productpreview = ({ addToCart }) => {
+  const { ProductsData } = useContext(ProductData);
   const { id } = useParams();
-  const ProductInfo = AllproductsData.find((p) => p.id === parseInt(id));
+  const ProductInfo = ProductsData.find((p) => p.id === parseInt(id));
   const [PrevewImage, SetPrevewImage] = useState(ProductInfo.filePath);
 
   // Starting Add to cart button
@@ -19,7 +20,7 @@ const Productpreview = ({ addToCart }) => {
   };
   // Clossing add to cart button function
   return (
-    <div>
+    <div className="bg-white">
       <div className="PageRatio">
         <div className="px-6 sm:px-6 md:px-0 TopNavigation flex flex-col sm:flex-col md:flex-row items-start  justify-start gap-2 sm:gap-3 md:gap-6 mt-10">
           <NavLink
@@ -236,9 +237,17 @@ const Productpreview = ({ addToCart }) => {
                 </div>
                 <div className="mt-2">Offer : {ProductInfo.offer}</div>
                 <div className="mt-2">Size : {ProductInfo.size}</div>
+                <div>
+                  <img
+                    loading="lazy"
+                    className=" bg-white w-4/5 mt-4 mix-blend-multiply"
+                    src={ProductInfo.semple}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
-            {/* Botton Product Information */}
+            {/* Bottom Product Information */}
           </div>
           {/* Product Main Area  */}
         </div>

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../components/card/Card";
-import { AllproductsData } from "../assets/Allproductsdata";
+
+import { ProductData } from "../assets/contextapi/ContextApp";
 
 const Faceproduct = () => {
-  const FaceProducts = AllproductsData.filter(
-    (p) => p.Category == "faceproduct"
-  );
+  const { ProductsData } = useContext(ProductData);
+  const FaceProducts = ProductsData.filter((p) => p.Category == "faceproduct");
   return (
     <div>
       <div className="px-32">

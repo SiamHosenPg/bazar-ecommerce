@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Products.css";
-import { AllproductsData } from "../../assets/Allproductsdata";
 import { NavLink } from "react-router";
 import { FaAngleRight } from "react-icons/fa6";
 import Card from "../card/Card";
 
+import { ProductData } from "../../assets/contextapi/ContextApp";
+
 const Products = () => {
-  const BestDiscount = AllproductsData.filter((p) => p.discount !== null);
+  const { ProductsData } = useContext(ProductData);
+
+  const BestDiscount = ProductsData.filter((p) => p.discount !== null);
   BestDiscount.sort((a, b) => a.discount - b.discount);
-  const HighestSales = AllproductsData.sort(
-    (a, b) => a.sellcount - b.sellcount
-  );
+  const HighestSales = ProductsData.sort((a, b) => a.sellcount - b.sellcount);
 
   return (
     <div className="Products mt-16 sm:mt-16 md:mt-20 lg:mt-32">
