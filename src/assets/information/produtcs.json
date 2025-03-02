@@ -11,19 +11,19 @@
     "rating": 4.5,
     "ratingcount": 94,
     "star": 5,
-    "filePath": "../../../public/image/product/shoe/id2/shoe1.jpg",
+    "filePath": "/image/product/shoe/id2/shoe1.jpg",
     "price": 25.99,
     "summaries": "Experience all-day comfort with these stylish running shoes, featuring breathable material and a cushioned sole for superior support.",
     "description": "Step up your game with our trendy running shoes designed for athletes and casual wearers alike. These shoes feature a breathable upper for ventilation, a cushioned midsole for shock absorption, and a durable outsole for excellent traction. Whether you're hitting the gym, going for a run, or just walking around town, these sneakers ensure comfort and style in every step.",
     "size": "Available in multiple sizes",
     "colors": ["Red", "Blue", "Green", "Black"],
-    "semple": "ProductsImages.Shoemap",
+    "semple": "/image/product/shoe/id2/map.jpg",
     "imageSources": [
       {
-        "ExtImage": "../../../public/image/product/shoe/id2/shoe1.jpg"
+        "ExtImage": "/image/product/shoe/id2/shoe1.jpg"
       },
       {
-        "ExtImage": "../../../public/image/product/shoe/id2/show2.jpg"
+        "ExtImage": "/image/product/shoe/id2/show2.jpg"
       }
     ],
     "benefits": [
@@ -116,22 +116,22 @@
     "rating": 4.0,
     "ratingcount": 79,
     "star": 4,
-    "filePath": "../../../public/image/product/shoe/id1/1.avif",
+    "filePath": "/image/product/shoe/id1/1.avif",
     "price": 30.99,
     "summaries": "Experience ultimate comfort and style with these lightweight running shoes, featuring breathable mesh fabric, shock-absorbing soles, and a flexible design for all-day wear.",
     "description": "Designed for athletes and casual wearers alike, these lightweight running shoes offer superior comfort and support. The breathable mesh upper ensures ventilation, while the cushioned insole and shock-absorbing outsole reduce strain on your feet. Whether you're hitting the gym, jogging, or simply walking around, these shoes provide the perfect blend of style and performance.",
     "size": "Available in multiple sizes",
     "colors": ["Red", "Blue", "Green", "Black"],
-    "semple": "../../../public/image/product/shoe/id1/map.jpg",
+    "semple": "/image/product/shoe/id1/map.jpg",
     "imageSources": [
       {
-        "ExtImage": "../../../public/image/product/shoe/id1/1.avif"
+        "ExtImage": "/image/product/shoe/id1/1.avif"
       },
       {
-        "ExtImage": "../../../public/image/product/shoe/id1/2.avif"
+        "ExtImage": "/image/product/shoe/id1/2.avif"
       },
       {
-        "ExtImage": "../../../public/image/product/shoe/id1/3.avif"
+        "ExtImage": "/image/product/shoe/id1/3.avif"
       }
     ],
     "benefits": [
@@ -224,22 +224,22 @@
     "rating": 3.8,
     "ratingcount": 42,
     "star": 3,
-    "filePath": "../../../public/image/product/earphone/headphone/headphone2.jpg",
+    "filePath": "/image/product/earphone/headphone/headphone2.jpg",
     "price": 19.99,
     "summaries": "Experience immersive sound with these wireless noise-canceling headphones, featuring deep bass, a 20-hour battery life, and a comfortable over-ear design.",
     "description": "These wireless headphones are designed for premium sound quality with powerful noise cancellation to block unwanted background noise. Equipped with deep bass technology, crystal-clear audio, and a comfortable fit, they are perfect for long listening sessions. The 20-hour battery life ensures uninterrupted music playback, making them ideal for travel, work, and gaming.",
     "size": "Standard Fit",
     "colors": ["Red", "Blue", "Green", "Black"],
-    "semple": "../../../public/image/product/earphone/headphone/map.avif",
+    "semple": "/image/product/earphone/headphone/map.avif",
     "imageSources": [
       {
-        "ExtImage": "../../../public/image/product/earphone/headphone/headphone1.jpg"
+        "ExtImage": "/image/product/earphone/headphone/headphone1.jpg"
       },
       {
-        "ExtImage": "../../../public/image/product/earphone/headphone/headphone2.jpg"
+        "ExtImage": "/image/product/earphone/headphone/headphone2.jpg"
       },
       {
-        "ExtImage": "../../../public/image/product/earphone/headphone/headphone3.jpg"
+        "ExtImage": "/image/product/earphone/headphone/headphone3.jpg"
       }
     ],
     "benefits": [
@@ -282,19 +282,19 @@
     "rating": 4.7,
     "ratingcount": 982,
     "star": 5,
-    "filePath": "../../../public/image/product/shoe/id3/shoe1.png",
+    "filePath": "/image/product/shoe/id3/shoe1.png",
     "price": 40.99,
     "summaries": "These durable fitness shoes provide ultimate support for your home workouts, offering comfort and flexibility for every movement.",
     "description": "These fitness shoes are designed to enhance your performance with superior comfort, breathable material, and a non-slip sole, making them ideal for various workouts at home or the gym.",
     "size": "8, 9, 10, 11",
     "colors": ["Red", "Blue", "Green", "Black"],
-    "semple": "../../../public/image/product/shoe/id3/map.jpg",
+    "semple": "/image/product/shoe/id3/map.jpg",
     "imageSources": [
       {
-        "ExtImage": "../../../public/image/product/shoe/id3/shoe1.png"
+        "ExtImage": "/image/product/shoe/id3/shoe1.png"
       },
       {
-        "ExtImage": "../../../public/image/product/shoe/id3/shoe2.jpg"
+        "ExtImage": "/image/product/shoe/id3/shoe2.jpg"
       }
     ],
     "benefits": [
