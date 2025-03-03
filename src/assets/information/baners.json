@@ -1,0 +1,16 @@
+[
+  {
+    "Title": "Elegant Royal Blue Couple Dress",
+    "About": "A stunning royal blue matching couple dress set, perfect for weddings and special occasions.",
+    "Category": "Couple Dress",
+    "Border": "border-[#e5b336]",
+    "Image": "/image/items-banar/couple-blue.avif"
+  },
+  {
+    "Title": "Classic Black & White Couple Outfit",
+    "About": "A timeless black and white couple outfit that blends sophistication with modern style.",
+    "Category": "Couple Dress",
+    "Border": "border-[#d8c8bb]",
+    "Image": "/image/items-banar/couple-white.avif"
+  }
+]

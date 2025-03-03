@@ -4,6 +4,7 @@ import Categories from "../components/topcategories/Categories";
 import Products from "../components/products/Products";
 import { IoLocationOutline } from "react-icons/io5";
 import { GiWorld } from "react-icons/gi";
+import Smallbanner from "../components/smallbanner/Smallbanner";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Header />
       <Categories />
       <Products />
+      <Smallbanner />
     </div>
   );
 };

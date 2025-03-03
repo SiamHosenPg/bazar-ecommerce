@@ -8,6 +8,7 @@ import { MdErrorOutline } from "react-icons/md";
 
 const CartItems = ({ cart, removeFromCart }) => {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
   return (
     <div className="mt-14">
       <h3>Shopping Cart</h3>
@@ -34,6 +35,10 @@ const CartItems = ({ cart, removeFromCart }) => {
             <div className="">
               {cart &&
                 cart.map((Items) => {
+                  const [CountNumber, SetCountNumber] = useState(1);
+                  const IncreseCountNumber = () => {
+                    SetCountNumber((prevCount) => prevCount + 1);
+                  };
                   return (
                     <div
                       key={Items.id}
@@ -59,9 +64,12 @@ const CartItems = ({ cart, removeFromCart }) => {
                       <div className="quantity w-2/12">
                         <div className=" flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 w-fit">
                           <div>
-                            <IoIosAdd className="text-xl cursor-pointer border rounded-full " />
+                            <IoIosAdd
+                              onClick={IncreseCountNumber}
+                              className="text-xl cursor-pointer border rounded-full "
+                            />
                           </div>
-                          <div className="text-lg">1</div>
+                          <div className="text-lg">{CountNumber}</div>
                           <div>
                             <IoIosRemove className="text-xl cursor-pointer border rounded-full" />
                           </div>
