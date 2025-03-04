@@ -176,13 +176,15 @@ const Productpreview = ({ addToCart }) => {
                         <div className="Reviews mt-10 mb-20" key={index}>
                           <div className="  rounded-lg" key={index}>
                             <div className="User flex justify-start items-start gap-8 mt-8">
-                              <div className="profile w-[50px] h-[50px]  rounded-full border">
-                                <img
-                                  className="h-full bg-slate-900 w-full rounded-full"
-                                  src={UserData.ProfileImg}
-                                  alt=""
-                                  loading="lazy"
-                                />
+                              <div className="profile w-[52px] h-[50px]  rounded-full border ">
+                                {UserData && (
+                                  <img
+                                    className="h-full bg-slate-900 w-full rounded-full "
+                                    src={UserData.ProfileImg}
+                                    alt=""
+                                    loading="lazy"
+                                  />
+                                )}
                               </div>
 
                               <div className="    w-[calc(100%_-50px)]">
@@ -213,22 +215,23 @@ const Productpreview = ({ addToCart }) => {
                                     </button>
                                   </div>
                                   <div className="Reply mt-4 flex flex-col gap-2  w-full lg:w-5/6">
-                                    {ProductData.comments.map(
-                                      (ConnentsData, index) => {
-                                        return (
-                                          <div className="" key={index}>
-                                            <div className="flex justify-start items-start gap-2 ">
-                                              <span className=" mt-[2px]  ">
-                                                <LuBadgeCheck />
-                                              </span>
-                                              <span className="block w-5/6 text-sm">
-                                                {ConnentsData.RplyText}
-                                              </span>
+                                    {ProductData.comments &&
+                                      ProductData.comments.map(
+                                        (ConnentsData, index) => {
+                                          return (
+                                            <div className="" key={index}>
+                                              <div className="flex justify-start items-start gap-2 ">
+                                                <span className=" mt-[2px]  ">
+                                                  <LuBadgeCheck />
+                                                </span>
+                                                <span className="block w-5/6 text-sm">
+                                                  {ConnentsData.RplyText}
+                                                </span>
+                                              </div>
                                             </div>
-                                          </div>
-                                        );
-                                      }
-                                    )}
+                                          );
+                                        }
+                                      )}
                                   </div>
                                 </div>
                               </div>

@@ -4,7 +4,7 @@ import { ProductData } from "../assets/contextapi/ContextApp";
 
 const Dressproduct = () => {
   const { ProductsData } = useContext(ProductData);
-  const DressProducts = ProductsData.filter((p) => p.Category == "dress");
+  const DressProducts = ProductsData.filter((p) => p.category == "dress");
   return (
     <div>
       <div className="px-32">

@@ -15,10 +15,12 @@ const Loginpage = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const [LoginContent, SetLoginContent] = useState(true);
+
   return (
-    <div className="w-full h-screen">
-      <div className="Ratio flex items-center justify-between h-full">
-        <div className="Left w-1/2 h-full">
+    <div className="w-full h-screen bg-[rgba(0,0,0,0.7)] fixed z-50 top-0 left-0 flex items-center justify-center">
+      <div className=" w-4/6 h-5/6 flex items-center justify-between rounded-2xl overflow-hidden bg-white">
+        <div className="Left w-1/2 h-full ">
           <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -30,13 +32,13 @@ const Loginpage = () => {
             alt=""
           />
         </div>
-        <div className="Right w-1/2 px-32">
-          <div className="Logo font-bold text-5xl  ">Bazar</div>
-          <p className="mt-3 w-10/12 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            facilis totam dolores inventore nesciunt?
-          </p>
-          <Loginform />
+        <div className="Right  w-1/2 px-20">
+          <div className="Logo font-bold text-3xl  ">Bazar</div>
+          {LoginContent ? (
+            <Loginform SetLoginContent={SetLoginContent} />
+          ) : (
+            <Signupform SetLoginContent={SetLoginContent} />
+          )}
         </div>
       </div>
     </div>

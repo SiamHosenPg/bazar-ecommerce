@@ -5,7 +5,7 @@ import { ProductData } from "../assets/contextapi/ContextApp";
 
 const Faceproduct = () => {
   const { ProductsData } = useContext(ProductData);
-  const FaceProducts = ProductsData.filter((p) => p.Category == "faceproduct");
+  const FaceProducts = ProductsData.filter((p) => p.category == "faceproduct");
   return (
     <div>
       <div className="px-32">

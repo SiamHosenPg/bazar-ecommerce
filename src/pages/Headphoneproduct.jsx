@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../components/card/Card";
-import { AllproductsData } from "../assets/Allproductsdata";
+import { ProductData } from "../assets/contextapi/ContextApp";
 
 const Headphoneproduct = () => {
-  const HeadphoneProducts = AllproductsData.filter(
-    (p) => p.Category == "headphone"
-  );
+  const { ProductsData } = useContext(ProductData);
+  const Headphones = ProductsData.filter((p) => p.category == "headphone");
   return (
     <div>
       <div className="px-32">
-        <Card AllproductsData={HeadphoneProducts} />
+        <Card AllproductsData={Headphones} />
       </div>
     </div>
   );

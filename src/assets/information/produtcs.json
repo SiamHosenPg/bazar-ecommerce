@@ -3,7 +3,7 @@
     "id": 1,
     "save": true,
     "name": "Trendy Running Shoes with Maximum Comfort",
-    "Category": "shoe",
+    "category": "shoe",
     "discount": 1.4,
     "startingprice": 27.5,
     "sellcount": 435,
@@ -108,7 +108,7 @@
     "id": 2,
     "save": false,
     "name": "Lightweight Running Shoes for Comfort and Performance",
-    "Category": "shoe",
+    "category": "shoe",
     "discount": 4,
     "startingprice": 33.8,
     "sellcount": 831,
@@ -216,7 +216,7 @@
     "id": 3,
     "save": true,
     "name": "Wireless Noise-Canceling Headphones with Deep Bass",
-    "Category": "headphone",
+    "category": "headphone",
     "discount": 1.4,
     "startingprice": 20.6,
     "sellcount": 435,
@@ -455,7 +455,7 @@
     "id": 7,
     "save": false,
     "name": "Velvet Matte Long-Lasting Lipstick",
-    "category": "face",
+    "category": "faceproduct",
     "discount": null,
     "startingprice": null,
     "sellcount": 200,
@@ -536,6 +536,180 @@
           {
             "Userid": "user789",
             "RplyText": "I agree! It's one of the best matte lipsticks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "save": false,
+    "name": "Ultra Protection Hydrating Sunscreen SPF 50+",
+    "category": "faceproduct",
+    "discount": null,
+    "startingprice": null,
+    "sellcount": 250,
+    "author": "GlowCare Skincare",
+    "rating": 4.9,
+    "ratingcount": 2200,
+    "star": 5,
+    "filePath": "/image/product/faceproduct/sunscream/img2.webp",
+    "price": 31.99,
+    "summaries": "A lightweight, non-greasy sunscreen with SPF 50+ protection, keeping your skin hydrated and shielded from harmful UV rays.",
+    "description": "This advanced sunscreen provides broad-spectrum UVA & UVB protection with SPF 50+. Infused with hydrating and soothing ingredients, it prevents sun damage while keeping your skin nourished. The fast-absorbing formula is perfect for all skin types and leaves no white cast.",
+    "size": "100ml, 150ml",
+    "colors": ["White", "Tinted Beige"],
+    "semple": null,
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/faceproduct/sunscream/image1.jpg"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/sunscream/img2.webp"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/sunscream/img3.webp"
+      }
+    ],
+    "benefits": [
+      "Broad-spectrum SPF 50+ for superior sun protection.",
+      "Lightweight, non-greasy formula absorbs quickly.",
+      "Hydrates and soothes skin with aloe vera and vitamin E.",
+      "Water-resistant for up to 80 minutes.",
+      "No white cast, making it suitable for all skin tones."
+    ],
+    "productReviews": [
+      {
+        "Name": "Olivia Martinez",
+        "date": "10 April 2023",
+        "imageLink": "https://example.com/images/olivia.jpg",
+        "ReviewText": "Best sunscreen I've ever used! It's lightweight and doesn't feel greasy on my skin.",
+        "rating": 5,
+        "Userid": "user111",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thank you, Olivia! We're happy it works well for you."
+          },
+          {
+            "Userid": "user222",
+            "RplyText": "I agree! No white cast and very hydrating."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "save": false,
+    "name": "Premium White & Blue Cotton T-Shirt",
+    "category": "dress",
+    "discount": 1.05,
+    "startingprice": 29.99,
+    "sellcount": 300,
+    "author": "UrbanStyle Apparel",
+    "rating": 4.8,
+    "ratingcount": 1350,
+    "star": 5,
+    "filePath": "/image/product/shirt/tshart4/1.webp",
+    "price": 27.99,
+    "summaries": "A stylish and comfortable white & blue cotton T-shirt designed for everyday wear.",
+    "description": "Made from high-quality cotton fabric, this white & blue T-shirt provides breathability and comfort. Its soft and lightweight material makes it perfect for casual outings or layering with your favorite jacket.",
+    "size": "S, M, L, XL, XXL",
+    "colors": ["White & Blue"],
+    "semple": "/image/product/shirt/tshart4/m.avif",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/shirt/tshart4/1.webp"
+      },
+      {
+        "ExtImage": "/image/product/shirt/tshart4/2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/shirt/tshart4/3.jpg"
+      }
+    ],
+    "benefits": [
+      "Soft and breathable 100% cotton fabric.",
+      "Classic design with white & blue color combination.",
+      "Perfect for casual and semi-formal occasions.",
+      "Durable stitching for long-lasting wear.",
+      "Machine washable and easy to maintain."
+    ],
+    "productReviews": [
+      {
+        "Name": "Michael Brown",
+        "date": "10 May 2023",
+        "imageLink": "https://example.com/images/michael.jpg",
+        "ReviewText": "The fabric is super soft, and the fit is perfect! Great for everyday wear.",
+        "rating": 5,
+        "Userid": "user456",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thanks, Michael! We’re glad you love the fit and fabric."
+          },
+          {
+            "Userid": "user666",
+            "RplyText": "I got one too, and it feels amazing!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "save": true,
+    "name": "Classic Fit Cotton T-Shirt",
+    "category": "dress",
+    "discount": 1.08,
+    "startingprice": 24.99,
+    "sellcount": 250,
+    "author": "CasualWear Essentials",
+    "rating": 4.7,
+    "ratingcount": 1200,
+    "star": 5,
+    "filePath": "/image/product/shirt/tshirt/tshirt3-demo1.png",
+    "price": 22.99,
+    "summaries": "A timeless classic-fit cotton T-shirt, perfect for every wardrobe.",
+    "description": "This classic T-shirt is made from high-quality cotton for superior comfort. Designed for a relaxed fit, it's ideal for everyday wear, whether you're at home, out with friends, or running errands.",
+    "size": "S, M, L, XL, XXL",
+    "colors": ["Black", "White", "Grey", "Navy"],
+    "semple": "/image/product/shirt/tshirt/m.avif",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/shirt/tshirt/tshirt3-demo1.png"
+      },
+      {
+        "ExtImage": "/image/product/shirt/tshirt/tshirt3-demo2.jpeg"
+      },
+      {
+        "ExtImage": "/image/product/shirt/tshirt/tshirt3.png"
+      }
+    ],
+    "benefits": [
+      "Classic fit for a timeless look.",
+      "Made from 100% breathable cotton.",
+      "Available in multiple essential colors.",
+      "Lightweight and comfortable for all-day wear.",
+      "Durable stitching and fabric for longevity."
+    ],
+    "productReviews": [
+      {
+        "Name": "Daniel Smith",
+        "date": "15 May 2023",
+        "imageLink": "https://example.com/images/daniel.jpg",
+        "ReviewText": "Perfect fit and very comfortable. A must-have basic T-shirt!",
+        "rating": 4.8,
+        "Userid": "user456",
+        "comments": [
+          {
+            "Userid": "admin001",
+            "RplyText": "Thanks, Daniel! We appreciate your feedback."
+          },
+          {
+            "Userid": "user888",
+            "RplyText": "I have one in navy, and it looks great!"
           }
         ]
       }
