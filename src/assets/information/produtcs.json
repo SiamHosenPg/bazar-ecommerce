@@ -374,5 +374,171 @@
         ]
       }
     ]
+  },
+  {
+    "id": 6,
+    "save": false,
+    "name": "Luxury Stainless Steel Chronograph Watch",
+    "category": "watch",
+    "discount": 1.2,
+    "startingprice": 120.5,
+    "sellcount": 150,
+    "author": "Elite Timepieces Co.",
+    "rating": 4.8,
+    "ratingcount": 1250,
+    "star": 5,
+    "filePath": "/image/product/watch/classic/1.jpg",
+    "price": 99.99,
+    "summaries": "A luxury stainless steel chronograph watch with precise timekeeping, elegant design, and water resistance for everyday wear.",
+    "description": "This premium chronograph watch features a durable stainless steel case, scratch-resistant sapphire glass, and water resistance up to 50m. Designed for both casual and formal occasions, it offers precision movement and an elegant look.",
+    "size": "40mm, 42mm, 44mm",
+    "colors": ["Silver", "Black", "Gold", "Blue"],
+    "semple": "/image/product/watch/classic/map-watch.jpg",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/watch/classic/1.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/classic/2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/classic/3.jpg"
+      }
+    ],
+    "benefits": [
+      "High-precision quartz movement for accurate timekeeping.",
+      "Scratch-resistant sapphire glass for long-lasting clarity.",
+      "Water-resistant up to 50 meters, suitable for everyday use.",
+      "Elegant stainless steel design for a stylish look.",
+      "Multi-function chronograph for added utility."
+    ],
+    "productReviews": [
+      {
+        "Name": "David Clark",
+        "date": "20 February 2023",
+        "imageLink": "https://example.com/images/david.jpg",
+        "ReviewText": "The best watch I’ve owned so far. The stainless steel body feels solid, and the timekeeping is extremely accurate.",
+        "rating": 5,
+        "Userid": "user456",
+        "comments": [
+          {
+            "Userid": "user123",
+            "RplyText": "That’s great to hear, David! Thanks for your review."
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I agree! The quality is top-notch."
+          }
+        ]
+      },
+      {
+        "Name": "Sophia Brown",
+        "date": "25 February 2023",
+        "imageLink": "https://example.com/images/sophia.jpg",
+        "ReviewText": "Very stylish watch! I love the gold variant. It feels premium and matches well with my outfits.",
+        "rating": 4.5,
+        "Userid": "user101",
+        "comments": [
+          {
+            "Userid": "user123",
+            "RplyText": "Thanks, Sophia! The gold version is a customer favorite."
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I have the silver one, and it’s also stunning!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "save": false,
+    "name": "Velvet Matte Long-Lasting Lipstick",
+    "category": "face",
+    "discount": null,
+    "startingprice": null,
+    "sellcount": 200,
+    "author": "Glamour Beauty Co.",
+    "rating": 4.9,
+    "ratingcount": 1800,
+    "star": 5,
+    "filePath": "/image/product/faceproduct/lipstic/lipstick.avif",
+    "price": 22.99,
+    "summaries": "A luxurious velvet matte lipstick with a long-lasting, lightweight formula that keeps your lips hydrated and bold all day.",
+    "description": "This premium velvet matte lipstick offers intense pigmentation with a smooth, creamy texture. Enriched with hydrating ingredients, it ensures all-day wear without drying out your lips. Available in multiple shades for every occasion.",
+    "size": "3.5g",
+    "colors": ["Red", "Nude", "Pink", "Berry", "Coral"],
+    "semple": "/image/product/faceproduct/lipstic/map.avif",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/faceproduct/lipstic/lipstick.avif"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/lipstic/lipstick2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/lipstic/lipstick3.jpg"
+      }
+    ],
+    "benefits": [
+      "Rich, highly pigmented color for bold lips.",
+      "Velvet matte finish that stays comfortable all day.",
+      "Hydrating formula prevents lips from drying.",
+      "Smudge-proof and long-lasting wear.",
+      "Available in a variety of flattering shades."
+    ],
+    "productReviews": [
+      {
+        "Name": "Emma Johnson",
+        "date": "5 March 2023",
+        "imageLink": "https://example.com/images/emma.jpg",
+        "ReviewText": "Absolutely love this lipstick! The color is vibrant, and it lasts all day without drying out my lips.",
+        "rating": 5,
+        "Userid": "user123",
+        "comments": [
+          {
+            "Userid": "user789",
+            "RplyText": "Thank you, Emma! We're thrilled that you love the formula."
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I got the nude shade, and it's stunning!"
+          }
+        ]
+      },
+      {
+        "Name": "Sophia Davis",
+        "date": "8 March 2023",
+        "imageLink": "https://example.com/images/sophia.jpg",
+        "ReviewText": "This lipstick is my go-to for every occasion. It’s lightweight but stays on for hours!",
+        "rating": 4.8,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "user101",
+            "RplyText": "Thanks, Sophia! We’re glad it’s your favorite."
+          }
+        ]
+      },
+      {
+        "Name": "Lily Brown",
+        "date": "12 March 2023",
+        "imageLink": "https://example.com/images/lily.jpg",
+        "ReviewText": "The formula is smooth and non-drying. I love how it glides on effortlessly!",
+        "rating": 5,
+        "Userid": "user101",
+        "comments": [
+          {
+            "Userid": "user101",
+            "RplyText": "That’s amazing to hear, Lily! Enjoy your perfect shade."
+          },
+          {
+            "Userid": "user789",
+            "RplyText": "I agree! It's one of the best matte lipsticks."
+          }
+        ]
+      }
+    ]
   }
 ]
