@@ -5,7 +5,6 @@ import { CgProfile } from "react-icons/cg";
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaBarsStaggered } from "react-icons/fa6";
-import "./Nav.css";
 
 const Nav = () => {
   const [NavpagePosition, SetNavPosition] = useState(false);
