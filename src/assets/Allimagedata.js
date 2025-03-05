@@ -8,7 +8,7 @@ import Shows6 from "./image/sport-running-shoes.png";
 import Shoemap from "./image/product/shoe/map.jpg";
 
 import Headphonepng from "./image/headphone-png.png";
-import DressPng from "./image/dress-png.png";
+import DressPng from "/image/dress.png";
 import Showspng from "./image/redshoe.png";
 
 import Shoe1 from "./image/product/shoe/id1/shoes-advertising-photography-fashion-store-landing-page-concept_742418-34550.avif";
