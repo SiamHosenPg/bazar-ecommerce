@@ -36,7 +36,7 @@ const Nav = () => {
         </div>
 
         <div
-          className={` transition-all bg-white border-l lg:border-none lg:bg-transparent  NavRightSide px-8 py-8 lg:px-0 lg:py-0 w-[310px]  md:w-[310px] 2xl:w-4/6 xl:w-9/12 lg:w-10/12 h-screen lg:h-fit fixed lg:relative top-[60px] lg:top-0 ${RightnavPostion}  lg:right-0 justify-end lg:justify-between  flex items-start lg:items-center flex-col-reverse lg:flex-row z-50 `}
+          className={` transition-all bg-white border-l lg:border-none lg:bg-transparent  NavRightSide px-8 py-8 lg:px-0 lg:py-0 w-[310px]  md:w-[310px] 2xl:w-4/6 xl:w-9/12 lg:w-10/12 h-screen lg:h-fit fixed lg:relative top-[60px] lg:top-0 ${RightnavPostion} duration-300 ease-in-out lg:right-0 justify-end lg:justify-between  flex items-start lg:items-center flex-col-reverse lg:flex-row z-50 `}
         >
           <ul className="Pages  w-full lg:w-fit block lg:flex items-start lg:items-center  gap-10  font-medium mt-6 lg:mt-0">
             <li className="link py-1">
