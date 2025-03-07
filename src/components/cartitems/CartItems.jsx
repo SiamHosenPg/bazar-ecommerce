@@ -6,8 +6,14 @@ import { IoIosRemove } from "react-icons/io";
 import { AiOutlineSafety } from "react-icons/ai";
 import { MdErrorOutline } from "react-icons/md";
 
-const CartItems = ({ cart, removeFromCart }) => {
+import { useCart } from "../../assets/contextapi/Cartcontext";
+
+const CartItems = () => {
+  const { cart, removeFromCart } = useCart();
+
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+  const delebaryFee = 1.0;
+  const tatalMainPrice = totalPrice + delebaryFee;
 
   return (
     <div className="mt-14">
@@ -115,19 +121,21 @@ const CartItems = ({ cart, removeFromCart }) => {
           </form>
           <div className="flex justify-between mt-8 items-center">
             <b className="block ">Sub Total</b>
-            <span className="block text-lg font-medium">$668</span>
+            <span className="block text-lg font-medium">${totalPrice}</span>
           </div>
           <div className="flex justify-between mt-2 items-center">
             <b className="block ">Discount Money</b>
-            <span className="block text-lg font-medium">$668</span>
+            <span className="block text-lg font-medium">$00</span>
           </div>
           <div className="flex justify-between mt-2 items-center border-b pb-3">
             <b className="block ">Delebary Fee</b>
-            <span className="block text-lg font-medium">$668</span>
+            <span className="block text-lg font-medium">${delebaryFee}</span>
           </div>
           <div className="flex justify-between mt-2 items-center">
-            <b className="block ">Total Price</b>
-            <span className="block text-xl font-semibold ">${totalPrice}</span>
+            <b className="block ">Total Price </b>
+            <span className="block text-xl font-semibold ">
+              ${tatalMainPrice}
+            </span>
           </div>
           <div className="flex gap-2 w-5/6 mt-8">
             <div>

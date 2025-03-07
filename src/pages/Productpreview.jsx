@@ -9,8 +9,10 @@ import Productreating from "../components/common/reating/Productreating";
 import { FaRegHeart } from "react-icons/fa6";
 import { FiMessageCircle } from "react-icons/fi";
 import { LuBadgeCheck } from "react-icons/lu";
+import { useCart } from "../assets/contextapi/Cartcontext";
 
-const Productpreview = ({ addToCart }) => {
+const Productpreview = () => {
+  const { addToCart } = useCart();
   const { ProductsData } = useContext(ProductData);
   const { id } = useParams();
   const ProductInfo = ProductsData.find((p) => p.id === parseInt(id));
