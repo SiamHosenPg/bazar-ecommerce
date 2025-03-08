@@ -29,7 +29,7 @@ const Nav = () => {
         className={`${Shadowdisplay} lg:hidden Shadowbox w-full h-screen fixed bg-[#00000049] z-40 top-[60px]`}
       ></div>
       <div className="PageRatio flex items-center justify-between h-full">
-        <div className="logo">
+        <div className="logo ">
           <NavLink to="/" className="text-3xl font-bold">
             Bazar
           </NavLink>
@@ -89,7 +89,7 @@ const Nav = () => {
 
             <form className="Inputbox w-full lg:w-[260px] flex items-center justify-between gap-3 mt-5 lg:mt-0 mb-6 lg:mb-0 border border-[#666] rounded-full overflow-hidden">
               <input
-                className="border-none  rounded-md px-4  py-2 text-sm w-5/6"
+                className="border-none  rounded-md px-4  py-2 text-sm w-5/6 bg-transparent"
                 type="text"
                 placeholder="Search Product"
               />
@@ -100,6 +100,7 @@ const Nav = () => {
             <NavLink
               to="/"
               className="BarLogo text-3xl font-bold block lg:hidden "
+              onClick={handelNavPosotion}
             >
               Bazar
             </NavLink>

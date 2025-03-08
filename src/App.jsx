@@ -34,8 +34,8 @@ function App() {
 
   return (
     <ProductDataProvider>
-      <CartProvider>
-        <DialogueProvider>
+      <DialogueProvider>
+        <CartProvider>
           {loading ? (
             // লোডিং স্পিনার দেখাবে
             <div className="flex justify-center items-center h-screen">
@@ -66,8 +66,8 @@ function App() {
               <Footer />
             </Router>
           )}
-        </DialogueProvider>
-      </CartProvider>
+        </CartProvider>
+      </DialogueProvider>
     </ProductDataProvider>
   );
 }

@@ -7,7 +7,7 @@ const Watchproduct = () => {
   const WatchProducts = ProductsData.filter((p) => p.category == "watch");
   return (
     <div>
-      <div className="px-32">
+      <div className="PageRatio">
         <Card AllproductsData={WatchProducts} />
       </div>
     </div>

@@ -7,7 +7,7 @@ const Dressproduct = () => {
   const DressProducts = ProductsData.filter((p) => p.category == "dress");
   return (
     <div>
-      <div className="px-32">
+      <div className="PageRatio">
         <Card AllproductsData={DressProducts} />
       </div>
     </div>

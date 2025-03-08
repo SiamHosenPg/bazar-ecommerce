@@ -8,7 +8,7 @@ const Faceproduct = () => {
   const FaceProducts = ProductsData.filter((p) => p.category == "faceproduct");
   return (
     <div>
-      <div className="px-32">
+      <div className="PageRatio">
         <Card AllproductsData={FaceProducts} />
       </div>
     </div>

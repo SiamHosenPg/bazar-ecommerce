@@ -1,14 +1,17 @@
 import { createContext, useContext, useState } from "react";
+import { DialogueContext } from "./Dialoguecontext";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
+  const { setDialougeText, setBoxStatus } = useContext(DialogueContext);
+
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
     if (cart.some((item) => item.id === product.id)) {
-      alert("Product already exists in the cart!");
-      return;
+      setDialougeText("Product already exists in the cart!");
+      setBoxStatus("block");
     } else {
       setCart([...cart, product]);
     }
