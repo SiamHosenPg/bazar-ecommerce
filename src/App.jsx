@@ -51,6 +51,7 @@ function App() {
               <Dialoguebox />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="*" element={<Notfound />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/allproducts" element={<AllProduct />} />

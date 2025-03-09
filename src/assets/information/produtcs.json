@@ -714,5 +714,402 @@
         ]
       }
     ]
+  },
+  {
+    "id": 11,
+    "save": true,
+    "name": "Vitamin C Brightening Cream",
+    "category": "faceproduct",
+    "discount": null,
+    "startingprice": null,
+    "sellcount": 500,
+    "author": "Glow Essentials",
+    "rating": 4.8,
+    "ratingcount": 1500,
+    "star": 5,
+    "filePath": "/image/product/faceproduct/cream1/vitaimn.jpg",
+    "price": 34.99,
+    "summaries": "A brightening cream infused with Vitamin C for a radiant complexion.",
+    "description": "This Vitamin C Brightening Cream is formulated to even out your skin tone and boost radiance. Infused with powerful antioxidants, it hydrates, protects, and rejuvenates your skin for a glowing, healthy look.",
+    "size": "50ml, 100ml",
+    "colors": ["White", "Light Pink", "Beige"],
+    "semple": "",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/faceproduct/cream1/vitamin-cream.jpg"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/cream1/vitamin-cream2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/cream1/vitaimn.jpg"
+      }
+    ],
+    "benefits": [
+      "Infused with Vitamin C for skin brightening.",
+      "Helps even out skin tone and reduce dark spots.",
+      "Hydrates and nourishes the skin deeply.",
+      "Contains antioxidants to protect from environmental damage.",
+      "Suitable for all skin types."
+    ],
+    "productReviews": [
+      {
+        "Name": "Emily Johnson",
+        "date": "18 February 2025",
+        "imageLink": "https://example.com/images/emily.jpg",
+        "ReviewText": "This cream made my skin glow like never before! It's a must-try for anyone looking for a brighter complexion.",
+        "rating": 5,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "admin002",
+            "RplyText": "Thanks for the kind words, Emily! We're glad to hear you're loving it!"
+          },
+          {
+            "Userid": "user345",
+            "RplyText": "I love how soft my skin feels after using this. Highly recommend!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "save": true,
+    "name": "Velvet Red Matte Lipstick",
+    "category": "faceproduct",
+    "discount": null,
+    "startingprice": null,
+    "sellcount": 800,
+    "author": "Glamour Cosmetics",
+    "rating": 4.9,
+    "ratingcount": 2300,
+    "star": 5,
+    "filePath": "/image/product/faceproduct/lipstick2/lipstick5.avif",
+    "price": 15.99,
+    "summaries": "A rich and smooth matte red lipstick for a bold, glamorous look.",
+    "description": "This Velvet Red Matte Lipstick offers a long-lasting, smooth, and intense color payoff. Its creamy texture glides on easily, providing full coverage with a matte finish that stays put throughout the day.",
+    "size": "4g, 6g",
+    "colors": ["Red", "Deep Red", "Berry Red"],
+    "semple": "",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/faceproduct/lipstick2/lipstick5.avif"
+      },
+      {
+        "ExtImage": "/image/product/faceproduct/lipstick2/lipstick4.jpg"
+      }
+    ],
+    "benefits": [
+      "Long-lasting matte finish.",
+      "Smooth application with rich color payoff.",
+      "Non-drying formula for comfortable wear.",
+      "Suitable for all skin tones.",
+      "Comes in a chic, elegant packaging."
+    ],
+    "productReviews": [
+      {
+        "Name": "Sophia Williams",
+        "date": "10 March 2025",
+        "imageLink": "https://example.com/images/sophia.jpg",
+        "ReviewText": "This lipstick is everything! The red is so bold and stunning, and it stays on all day without reapplying.",
+        "rating": 5,
+        "Userid": "user234",
+        "comments": [
+          {
+            "Userid": "admin003",
+            "RplyText": "Thank you, Sophia! We're so happy you're loving the Velvet Red Lipstick!"
+          },
+          {
+            "Userid": "user567",
+            "RplyText": "I agree! It’s the perfect red shade. My go-to lipstick now!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "save": false,
+    "name": "iPhone 5s - 16GB",
+    "category": "mobile",
+    "discount": 7.25,
+    "startingprice": 399.99,
+    "sellcount": 1500,
+    "author": "Apple",
+    "rating": 4.5,
+    "ratingcount": 3200,
+    "star": 5,
+    "filePath": "/image/product/mobile/5s/5s.jpg",
+    "price": 319.99,
+    "summaries": "A classic iPhone with sleek design and reliable performance.",
+    "description": "The iPhone 5s offers a perfect balance of performance and design, featuring the A7 chip for fast performance, an 8MP camera, and a 4-inch Retina display. This model is perfect for those who want a reliable iPhone at an affordable price.",
+    "size": "16GB",
+    "colors": ["Silver", "Gold", "Space Gray"],
+    "semple": "",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/mobile/5s/5s.jpg"
+      },
+      {
+        "ExtImage": "/image/product/mobile/5s/5s2.jpg"
+      }
+    ],
+    "benefits": [
+      "A7 chip for fast and responsive performance.",
+      "4-inch Retina display with vibrant colors.",
+      "8MP camera for quality photos and videos.",
+      "Touch ID for secure authentication.",
+      "Available in classic colors: Silver, Gold, and Space Gray."
+    ],
+    "productReviews": [
+      {
+        "Name": "John Doe",
+        "date": "20 February 2025",
+        "imageLink": "https://example.com/images/john.jpg",
+        "ReviewText": "The iPhone 5s is still a great device, especially for those who prefer a smaller screen and reliable performance. Touch ID is a nice addition.",
+        "rating": 4.7,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "admin004",
+            "RplyText": "Thanks for the great review, John! We're glad you're enjoying the iPhone 5s!"
+          },
+          {
+            "Userid": "user123",
+            "RplyText": "I agree, it's a solid phone. Love the design and performance!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "save": false,
+    "name": "Slim Fit Casual Pants for Men with Stretch Fabric",
+    "category": "panes",
+    "discount": 1.1,
+    "startingprice": 39.99,
+    "sellcount": 1200,
+    "author": "TrendSetter Apparel",
+    "rating": 4.6,
+    "ratingcount": 900,
+    "star": 5,
+    "filePath": "/image/product/pant/pant1/1.jpg",
+    "price": 34.99,
+    "summaries": "Comfortable slim-fit casual pants made with stretch fabric for flexibility.",
+    "description": "These slim-fit casual pants are designed with a stretch fabric that provides comfort and flexibility throughout the day. Whether you're going for a laid-back look or a more polished appearance, these pants are a versatile addition to any wardrobe.",
+    "size": "28, 30, 32, 34, 36, 38",
+    "colors": ["Black", "Navy", "Charcoal", "Olive"],
+    "semple": "/image/product/pant/pant1/map.webp",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/pant/pant1/1.jpg"
+      },
+      {
+        "ExtImage": "/image/product/pant/pant1/2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/pant/pant1/3.jpg"
+      }
+    ],
+    "benefits": [
+      "Slim fit design for a modern, stylish look.",
+      "Stretch fabric for ultimate comfort and flexibility.",
+      "Available in versatile colors for easy pairing.",
+      "Durable and machine washable.",
+      "Perfect for both casual and semi-formal occasions."
+    ],
+    "productReviews": [
+      {
+        "Name": "Michael Turner",
+        "date": "5 March 2025",
+        "imageLink": "https://example.com/images/michael.jpg",
+        "ReviewText": "These pants fit perfectly and are so comfortable. The stretch fabric is amazing and makes them perfect for all-day wear.",
+        "rating": 4.8,
+        "Userid": "user432",
+        "comments": [
+          {
+            "Userid": "admin005",
+            "RplyText": "Thanks, Michael! We're glad to hear you're enjoying the pants!"
+          },
+          {
+            "Userid": "user789",
+            "RplyText": "I agree, the stretch fabric is so comfortable. Great purchase!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "save": true,
+    "name": "Classic Leather Belt Watch with Stylish Analog Display",
+    "category": "watch",
+    "discount": null,
+    "startingprice": null,
+    "sellcount": 600,
+    "author": "Timeless Watches",
+    "rating": 4.7,
+    "ratingcount": 1100,
+    "star": 5,
+    "filePath": "/image/product/watch/beltwatch/1.jpg",
+    "price": 67.99,
+    "summaries": "A sophisticated leather belt watch with an elegant analog display.",
+    "description": "This leather belt watch combines elegance and functionality, featuring a high-quality leather strap and a classic analog dial. The stylish design is perfect for both casual and formal occasions, offering timeless appeal and durability.",
+    "size": "One Size (Adjustable)",
+    "colors": ["Black", "Brown", "Tan", "Navy"],
+    "semple": "/image/product/watch/beltwatch/map-watch.jpg",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/watch/beltwatch/1.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/beltwatch/2.jpg"
+      }
+    ],
+    "benefits": [
+      "High-quality leather strap for durability and comfort.",
+      "Elegant analog display for a classic, sophisticated look.",
+      "Adjustable belt for a perfect fit.",
+      "Ideal for both casual and formal wear.",
+      "Water-resistant design for everyday use."
+    ],
+    "productReviews": [
+      {
+        "Name": "Liam Harper",
+        "date": "25 February 2025",
+        "imageLink": "https://example.com/images/liam.jpg",
+        "ReviewText": "A stunning watch! The leather feels premium, and the analog display is clean and easy to read. Looks amazing with any outfit.",
+        "rating": 4.9,
+        "Userid": "user123",
+        "comments": [
+          {
+            "Userid": "admin006",
+            "RplyText": "Thanks, Liam! We’re thrilled that you love your new watch!"
+          },
+          {
+            "Userid": "user456",
+            "RplyText": "This is exactly what I was looking for! Comfortable and stylish."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "save": true,
+    "name": "Classic Aluminum Watch with White and Golden Design",
+    "category": "watch",
+    "discount": 1.18,
+    "startingprice": 99.99,
+    "sellcount": 750,
+    "author": "Elite Timepieces",
+    "rating": 4.8,
+    "ratingcount": 1500,
+    "star": 5,
+    "filePath": "/image/product/watch/classic3/1.jpg",
+    "price": 81.99,
+    "summaries": "A premium aluminum watch with an elegant white and golden finish.",
+    "description": "This Classic Aluminum Watch is designed with a luxurious white and golden color combination, giving it a refined and sophisticated appearance. The lightweight aluminum body ensures comfort, while the durable glass and precision movement provide long-lasting performance.",
+    "size": "One Size (Adjustable)",
+    "colors": ["White ", "Gold"],
+    "semple": "/image/product/watch/classic3/map-watch.jpg",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/watch/classic3/1.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/classic3/2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/classic3/3.jpg"
+      }
+    ],
+    "benefits": [
+      "Lightweight aluminum body for comfortable wear.",
+      "Elegant white and golden color combination.",
+      "Scratch-resistant glass for durability.",
+      "Water-resistant design for everyday use.",
+      "Perfect for formal and casual occasions."
+    ],
+    "productReviews": [
+      {
+        "Name": "Ethan Carter",
+        "date": "12 March 2025",
+        "imageLink": "https://example.com/images/ethan.jpg",
+        "ReviewText": "Absolutely love this watch! The white and gold design is stunning, and it feels premium. Great for both office wear and casual outings.",
+        "rating": 4.9,
+        "Userid": "user789",
+        "comments": [
+          {
+            "Userid": "admin007",
+            "RplyText": "Thanks, Ethan! We're glad you love the elegant design!"
+          },
+          {
+            "Userid": "user555",
+            "RplyText": "I just ordered mine! Can't wait to try it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "save": false,
+    "name": "Advanced Smart Watch with Fitness Tracking and Heart Rate Monitor",
+    "category": "electronics",
+    "discount": 1.2,
+    "startingprice": 129.99,
+    "sellcount": 1800,
+    "author": "TechWear Innovations",
+    "rating": 4.7,
+    "ratingcount": 2500,
+    "star": 5,
+    "filePath": "/image/product/watch/smartw/1.jpg",
+    "price": 103.99,
+    "summaries": "A high-performance smart watch with fitness tracking and health monitoring.",
+    "description": "Stay ahead with this advanced smart watch, featuring a sleek design, fitness tracking, heart rate monitoring, and multiple sport modes. With a high-resolution touchscreen display and long battery life, this smartwatch is perfect for everyday wear and active lifestyles.",
+    "size": "Adjustable Strap",
+    "colors": ["Black", "Silver", "Rose Gold"],
+    "semple": "/image/product/watch/smartw/map-watch.jpg",
+    "imageSources": [
+      {
+        "ExtImage": "/image/product/watch/smartw/1.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/smartw/2.jpg"
+      },
+      {
+        "ExtImage": "/image/product/watch/smartw/3.jpg"
+      }
+    ],
+    "benefits": [
+      "Tracks steps, calories, and heart rate in real time.",
+      "Multiple sport modes for a personalized fitness experience.",
+      "Water-resistant design for outdoor and workout activities.",
+      "Long battery life with fast charging capability.",
+      "Syncs with Android and iOS devices for seamless connectivity."
+    ],
+    "productReviews": [
+      {
+        "Name": "Sophia Miller",
+        "date": "8 March 2025",
+        "imageLink": "https://example.com/images/sophia.jpg",
+        "ReviewText": "This smart watch is amazing! The fitness tracking is accurate, and I love the sleek design. Battery life is also impressive!",
+        "rating": 4.9,
+        "Userid": "user654",
+        "comments": [
+          {
+            "Userid": "admin008",
+            "RplyText": "Thanks, Sophia! We're happy to hear you’re enjoying your smart watch!"
+          },
+          {
+            "Userid": "user222",
+            "RplyText": "I’m thinking of buying one! How’s the sleep tracking feature?"
+          }
+        ]
+      }
+    ]
   }
 ]
