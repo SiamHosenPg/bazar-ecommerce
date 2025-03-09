@@ -19,6 +19,7 @@ import { ProductDataProvider } from "./assets/contextapi/ContextApp";
 import { CartProvider } from "./assets/contextapi/Cartcontext";
 import Dialoguebox from "./components/common/dialoguebox/Dialoguebox";
 import { DialogueProvider } from "./assets/contextapi/Dialoguecontext";
+import Notfound from "./pages/Notfound";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -50,7 +51,7 @@ function App() {
               <Dialoguebox />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="*" element={<Home />} />
+                <Route path="*" element={<Notfound />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/allproducts" element={<AllProduct />} />
                 <Route path="/login" element={<Loginpage />} />

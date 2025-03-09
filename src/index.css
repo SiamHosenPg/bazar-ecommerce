@@ -13,12 +13,9 @@
     scrollbar-width: none; /* Firefox */
   }
 }
-* {
-  animation-timing-function: steps(60, end);
-}
+
 html {
   scroll-behavior: smooth;
-  animation-timing-function: steps(60, end);
 }
 .line-ellipsetext {
   white-space: nowrap;
