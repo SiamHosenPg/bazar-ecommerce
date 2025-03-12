@@ -50,7 +50,7 @@ const Nav = () => {
               </NavLink>
             </li>
             <li className="py-1" onClick={handelNavPosotion}>
-              <a href="">Gift Cards</a>
+              <NavLink to="/">Gift Cards</NavLink>
             </li>
             <li className="py-1" onClick={handelNavPosotion}>
               <NavLink to="/about">About Us</NavLink>

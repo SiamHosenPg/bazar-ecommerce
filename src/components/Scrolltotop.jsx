@@ -1,24 +1,28 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 
-export default function ScrollToTop() {
+const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const savedPosition = sessionStorage.getItem(`scrollPosition-${pathname}`);
-    if (savedPosition) {
-      window.scrollTo(0, parseInt(savedPosition, 10));
-    } else {
+    // Scroll to top only when navigating using React Router
+    if (!window.history.state?.scrollPosition) {
       window.scrollTo(0, 0);
     }
+  }, [pathname]);
 
+  useEffect(() => {
+    // Store the scroll position when the user scrolls
     const handleScroll = () => {
-      sessionStorage.setItem(`scrollPosition-${pathname}`, window.scrollY);
+      window.history.replaceState({ scrollPosition: window.scrollY }, "");
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [pathname]);
+  }, []);
 
   return null;
-}
+};
+
+export default ScrollToTop;

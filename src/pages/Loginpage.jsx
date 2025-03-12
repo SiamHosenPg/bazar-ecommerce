@@ -3,8 +3,14 @@ import Loginform from "../components/loginform/Loginform";
 import Signupform from "../components/signupform/Signupform";
 import { LoginIamgeData } from "../assets/Loginpageiamge";
 import { motion } from "framer-motion";
+import useCustomNavigate from "../hook/Usenavigation";
 
 const Loginpage = () => {
+  const { goTo } = useCustomNavigate();
+  const ClickEventNavigate = (path) => {
+    goTo(path);
+  };
+
   const [indexdata, SetPageImage] = useState(0);
   const nextData = () => {
     SetPageImage((prev) => (prev + 1) % LoginIamgeData.length);
@@ -18,9 +24,9 @@ const Loginpage = () => {
   const [LoginContent, SetLoginContent] = useState(true);
 
   return (
-    <div className="w-full h-screen bg-[rgba(0,0,0,0.7)] fixed z-50 top-0 left-0 flex items-center justify-center">
-      <div className=" w-4/6 h-5/6 flex items-center justify-between rounded-2xl overflow-hidden bg-white">
-        <div className="Left w-1/2 h-full ">
+    <div className="w-full h-screen bg-[rgba(0,0,0,0.7)]  flex items-center justify-center">
+      <div className=" w-full h-full flex items-center justify-between overflow-hidden bg-white">
+        <div className="Left w-1/2 h-full hidden lg:block ">
           <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -32,8 +38,13 @@ const Loginpage = () => {
             alt=""
           />
         </div>
-        <div className="Right  w-1/2 px-20">
-          <div className="Logo font-bold text-3xl  ">Bazar</div>
+        <div className="Right w-full  lg:w-1/2 px-8 md:px-44 lg:px-20 xl:px-28 2xl:px-40">
+          <div
+            onClick={() => ClickEventNavigate("/about")}
+            className="Logo font-bold text-3xl w-fit cursor-pointer"
+          >
+            Bazar
+          </div>
           {LoginContent ? (
             <Loginform SetLoginContent={SetLoginContent} />
           ) : (

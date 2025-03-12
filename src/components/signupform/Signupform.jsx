@@ -15,7 +15,7 @@ const Signupform = ({ SetLoginContent }) => {
           Create account for your biggest busseness
         </p>
       </div>
-      <form action="" className="w-3/4 mt-12">
+      <form action="" className=" w-full xl:w-3/4 mt-12">
         <div className="EmailBox mt-6 border border-[#999] flex items-center pl-4 rounded-md pr-2">
           <div>
             <MdOutlineAccountCircle className="text-xl" />
@@ -46,7 +46,7 @@ const Signupform = ({ SetLoginContent }) => {
           />
         </div>
 
-        <div className="Policy mt-6 flex items-center justify-between gap-4">
+        <div className="Policy mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 ">
           <div className="flex items-center justify-start gap-2">
             <input
               type="checkbox"
@@ -63,11 +63,11 @@ const Signupform = ({ SetLoginContent }) => {
         <input
           type="submit"
           value="Create account"
-          className=" bg-blue-600 text-white block w-full text-center py-3 rounded-md mt-10 font-medium"
+          className=" bg-blue-600 text-white block w-full text-center py-3 rounded-md mt-10 font-medium cursor-pointer"
         />
       </form>
       <div>
-        <p className="w-2/3 mt-10 text-sm">
+        <p className="w-full xl:w-2/3 mt-10 text-sm">
           Your have an account Click{" "}
           <button onClick={LoginPageShow} className="text-blue-600" href="">
             Login

@@ -46,26 +46,42 @@ function App() {
             // ওয়েবসাইটের মেইন কন্টেন্ট
 
             <Router>
-              <ScrollToTop />
-              <Nav />
-              <Dialoguebox />
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="*" element={<Notfound />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/allproducts" element={<AllProduct />} />
                 <Route path="/login" element={<Loginpage />} />
-                <Route path="/allproducts/:id" element={<Productpreview />} />
-                <Route path="/carts" element={<Carts />} />
-                <Route path="/save" element={<Save />} />
-                <Route path="/shoe" element={<Shoepage />} />
-                <Route path="/watch" element={<Watchproduct />} />
-                <Route path="/dress" element={<Dressproduct />} />
-                <Route path="/headphones" element={<Headphoneproduct />} />
-                <Route path="/faceproduct" element={<Faceproduct />} />
+                <Route
+                  path="/*"
+                  element={
+                    <>
+                      <ScrollToTop />
+                      <Nav />
+                      <Dialoguebox />
+                      <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/home" element={<Home />} />
+                        <Route path="*" element={<Notfound />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/allproducts" element={<AllProduct />} />
+                        <Route path="/login" element={<Loginpage />} />
+                        <Route
+                          path="/allproducts/:id"
+                          element={<Productpreview />}
+                        />
+                        <Route path="/carts" element={<Carts />} />
+                        <Route path="/save" element={<Save />} />
+                        <Route path="/shoe" element={<Shoepage />} />
+                        <Route path="/watch" element={<Watchproduct />} />
+                        <Route path="/dress" element={<Dressproduct />} />
+                        <Route
+                          path="/headphones"
+                          element={<Headphoneproduct />}
+                        />
+                        <Route path="/faceproduct" element={<Faceproduct />} />
+                      </Routes>
+                      <Footer />
+                    </>
+                  }
+                />
               </Routes>
-              <Footer />
             </Router>
           )}
         </CartProvider>
