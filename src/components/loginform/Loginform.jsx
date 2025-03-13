@@ -24,7 +24,7 @@ const Loginform = ({ SetLoginContent }) => {
           <span>Google</span>
         </button>
       </div>
-      <div className="flex gap-4 items-center justify-between mt-14 w-full xl:w-3/4">
+      <div className="flex gap-4 items-center justify-between mt-14 lg:mt-4 2xl:mt-14 w-full xl:w-3/4">
         <span className="block bg-[#eee] h-[1px] w-[calc(50%_-_80px)] "></span>
         <span className="block w-[160px] text-center text-[13px]">
           Contunow with Email
@@ -66,7 +66,7 @@ const Loginform = ({ SetLoginContent }) => {
       </form>
 
       <div>
-        <p className=" w-full lg:w-2/3 mt-10 text-sm">
+        <p className=" w-full lg:w-2/3 mt-10 lg:mt-6 2xl:mt-10 text-sm">
           Don't have an account.
           <button onClick={CreateAccountPage} className="text-blue-800 ml-3">
             Create account
