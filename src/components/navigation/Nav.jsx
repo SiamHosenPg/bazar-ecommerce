@@ -13,15 +13,18 @@ const Nav = () => {
   const [NavpagePosition, SetNavPosition] = useState(false);
   const [RightnavPostion, setRightPosition] = useState("right-[-400px]");
   const [Shadowdisplay, setShadowdisplay] = useState("hidden");
+  const [SuggestDp, SetSguutdp] = useState("block");
   const handelNavPosotion = () => {
     if (NavpagePosition == true) {
       SetNavPosition(false);
       setRightPosition("right-[-400px]");
       setShadowdisplay("hidden");
+      SetSguutdp("hidden");
     } else {
       SetNavPosition(true);
       setRightPosition("right-[0px]");
       setShadowdisplay("block");
+      SetSguutdp("block");
     }
   };
 
@@ -139,7 +142,9 @@ const Nav = () => {
 
       <div className="">
         {Suggestionbox && (
-          <ul className=" bg-white border right-0 w-[400px] fixed h-[calc(100vh_-_78px)] top-[77px] px-3 py-2 overflow-y-scroll">
+          <ul
+            className={` ${SuggestDp} bg-white border right-[5px] w-[300px] lg:w-[400px] fixed h-[calc(100vh_-_200px)] lg:h-[calc(100vh_-_78px)]  px-3 py-2 overflow-y-scroll z-50 top-[200px]  lg:top-[59px] xl:top-[77px] `}
+          >
             {suggestions.length > 0 ? (
               <div className="">
                 {suggestions.map((product) => {
