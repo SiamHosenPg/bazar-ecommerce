@@ -40,7 +40,7 @@ const Loginpage = () => {
         </div>
         <div className="Right w-full  lg:w-1/2 px-8 md:px-44 lg:px-20 xl:px-28 2xl:px-40">
           <div
-            onClick={() => ClickEventNavigate("/about")}
+            onClick={() => ClickEventNavigate("/")}
             className="Logo font-bold text-3xl w-fit cursor-pointer"
           >
             Bazar

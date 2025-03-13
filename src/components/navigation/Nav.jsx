@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+import { SearchContext } from "../../assets/contextapi/Searchcontext";
+import { CgDanger } from "react-icons/cg";
 
 const Nav = () => {
   const [NavpagePosition, SetNavPosition] = useState(false);
@@ -20,6 +23,22 @@ const Nav = () => {
       setRightPosition("right-[0px]");
       setShadowdisplay("block");
     }
+  };
+
+  const {
+    query,
+    handleQueryChange,
+    searchProducts,
+    suggestions,
+    Suggestionbox,
+    showSGbox,
+  } = useContext(SearchContext);
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    searchProducts();
+    navigate("/results");
+    showSGbox(false);
   };
 
   return (
@@ -87,16 +106,21 @@ const Nav = () => {
               <span className=" block lg:hidden font-medium">Profile</span>
             </NavLink>
 
-            <form className="Inputbox w-full lg:w-[260px] flex items-center justify-between gap-3 mt-5 lg:mt-0 mb-6 lg:mb-0 border border-[#666] rounded-full overflow-hidden">
+            <div className="Inputbox w-full lg:w-[260px] flex items-center justify-between gap-3 mt-5 lg:mt-0 mb-6 lg:mb-0 border border-[#666] rounded-full overflow-hidden">
               <input
+                value={query}
                 className="border-none  rounded-md px-4  py-2 text-sm w-5/6 bg-transparent"
                 type="text"
                 placeholder="Search Product"
+                onChange={(e) => handleQueryChange(e.target.value)}
               />
-              <button className="flex items-center gap-2  w-7">
+              <button
+                onClick={handleSearch}
+                className="flex items-center gap-2  w-7"
+              >
                 <IoSearch className="" />{" "}
               </button>
-            </form>
+            </div>
             <NavLink
               to="/"
               className="BarLogo text-3xl font-bold block lg:hidden "
@@ -111,6 +135,46 @@ const Nav = () => {
           onClick={handelNavPosotion}
           className="MenuButton font-semibold text-lg block lg:hidden"
         />
+      </div>
+
+      <div className="">
+        {Suggestionbox && (
+          <ul className=" bg-white border right-0 w-[400px] fixed h-[calc(100vh_-_78px)] top-[77px] px-3 py-2 overflow-y-scroll">
+            {suggestions.length > 0 ? (
+              <div className="">
+                {suggestions.map((product) => {
+                  return (
+                    <NavLink
+                      key={product.id}
+                      onClick={handleSearch}
+                      to={`/AllProducts/${product.id}`}
+                      className="p-2 hover:bg-gray-100 rounded-md flex items-center justify-start gap-3 mt-2"
+                    >
+                      <div className="Image aspect-square overflow-hidden w-[50px]">
+                        <img
+                          className="aspect-square object-cover bg-slate-300 rounded-md"
+                          src={product.filePath}
+                          alt=""
+                        />
+                      </div>
+                      <p className="w-[calc(100%_-_50px)] text-sm">
+                        {product.name}
+                      </p>
+                    </NavLink>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className=" w-full ">
+                <b className=" text-center mt-24 flex items-center justify-center gap-3">
+                  {" "}
+                  <CgDanger className="text-xl" />
+                  No Products found
+                </b>
+              </div>
+            )}
+          </ul>
+        )}
       </div>
     </nav>
   );
