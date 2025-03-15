@@ -7,6 +7,7 @@ import { AiOutlineSafety } from "react-icons/ai";
 import { MdErrorOutline } from "react-icons/md";
 
 import { useCart } from "../../assets/contextapi/Cartcontext";
+import Checkoutinfo from "./Checkoutinfo";
 
 const CartItems = () => {
   const {
@@ -175,6 +176,8 @@ const CartItems = () => {
         </div>
         {/* Price Items Closs  */}
       </div>
+
+      <Checkoutinfo />
     </div>
   );
 };
