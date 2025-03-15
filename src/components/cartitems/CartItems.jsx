@@ -9,12 +9,23 @@ import { MdErrorOutline } from "react-icons/md";
 import { useCart } from "../../assets/contextapi/Cartcontext";
 
 const CartItems = () => {
-  const { cart, removeFromCart } = useCart();
-
-  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
-  const delebaryFee = 1.0;
-  const tatalMainPrice = totalPrice + delebaryFee;
-
+  const {
+    cart,
+    removeFromCart,
+    increaseQuantity,
+    decreaseQuantity,
+    discount,
+    getSubTotal,
+    getDiscountAmount,
+    getTotalPrice,
+    getTotalWithDelivery,
+    applyCoupon,
+  } = useCart();
+  const [couponCode, setCouponCode] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+  const deliveryFee = 5; // ডেলিভারি ফি $5 (তুই চাইলে এটা dinamic করতে পারিস)
   return (
     <div className="mt-14">
       <h3>Shopping Cart</h3>
@@ -41,10 +52,6 @@ const CartItems = () => {
             <div className="">
               {cart &&
                 cart.map((Items) => {
-                  const [CountNumber, SetCountNumber] = useState(1);
-                  const IncreseCountNumber = () => {
-                    SetCountNumber((prevCount) => prevCount + 1);
-                  };
                   return (
                     <div
                       key={Items.id}
@@ -71,19 +78,22 @@ const CartItems = () => {
                         <div className=" flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 w-fit">
                           <div>
                             <IoIosAdd
-                              onClick={IncreseCountNumber}
+                              onClick={() => increaseQuantity(Items.id)}
                               className="text-xl cursor-pointer border rounded-full "
                             />
                           </div>
-                          <div className="text-lg">{CountNumber}</div>
+                          <div className="text-lg">{Items.quantity}</div>
                           <div>
-                            <IoIosRemove className="text-xl cursor-pointer border rounded-full" />
+                            <IoIosRemove
+                              onClick={() => decreaseQuantity(Items.id)}
+                              className="text-xl cursor-pointer border rounded-full"
+                            />
                           </div>
                         </div>
                       </div>
                       {/* Quantity Section Closs  */}
                       <div className="Price w-2/12 text-[15px] sm:text-lg font-medium">
-                        ${Items.price}
+                        ${Items.price * Items.quantity}
                       </div>
                       <div className="Action  w-2/12 flex justify-center xl:justify-start items-center ">
                         <button>
@@ -105,36 +115,46 @@ const CartItems = () => {
         {/* Cart Items Closs  */}
         <div className="PriceItems w-full sm:w-full md:w-4/6 lg:w-4/12 border rounded-lg px-8 py-4 md:px-10 md:py-5 xl:px-12 xl:py-6 ">
           <div className=" pb-4 font-medium">Order Summary</div>
-          <form action="" className="flex gap-4 justify-start items-center">
+          <form
+            action=""
+            className="flex gap-4 justify-start items-center"
+            onSubmit={handleSubmit}
+          >
             <input
               className="border w-7/12 border-[#444] rounded-3xl px-5 py-2"
               type="text"
               name=""
               id="Viuture"
               placeholder="Discount vutuare"
+              onChange={(e) => setCouponCode(e.target.value)}
             />
             <input
               className="border w-[100px] border-[#444] rounded-3xl px-5 py-2 text-[#666]"
               type="submit"
               value="Apply"
+              onClick={() => applyCoupon(couponCode)}
             />
           </form>
           <div className="flex justify-between mt-8 items-center">
             <b className="block ">Sub Total</b>
-            <span className="block text-lg font-medium">${totalPrice}</span>
+            <span className="block text-lg font-medium">
+              ${getSubTotal(cart)}
+            </span>
           </div>
           <div className="flex justify-between mt-2 items-center">
             <b className="block ">Discount Money</b>
-            <span className="block text-lg font-medium">$00</span>
+            <span className="block text-lg font-medium">
+              ${getDiscountAmount(cart, discount)}
+            </span>
           </div>
           <div className="flex justify-between mt-2 items-center border-b pb-3">
             <b className="block ">Delebary Fee</b>
-            <span className="block text-lg font-medium">${delebaryFee}</span>
+            <span className="block text-lg font-medium"> ${deliveryFee}</span>
           </div>
           <div className="flex justify-between mt-2 items-center">
             <b className="block ">Total Price </b>
             <span className="block text-xl font-semibold ">
-              ${tatalMainPrice}
+              ${getTotalWithDelivery(deliveryFee)}
             </span>
           </div>
           <div className="flex gap-2 w-5/6 mt-8">
