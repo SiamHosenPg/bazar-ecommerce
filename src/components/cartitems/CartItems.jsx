@@ -53,6 +53,8 @@ const CartItems = () => {
             <div className="">
               {cart &&
                 cart.map((Items) => {
+                  const PdPrice = Items.price * Items.quantity;
+                  const PriceFixed = PdPrice.toFixed(2);
                   return (
                     <div
                       key={Items.id}
@@ -94,7 +96,7 @@ const CartItems = () => {
                       </div>
                       {/* Quantity Section Closs  */}
                       <div className="Price w-2/12 text-[15px] sm:text-lg font-medium">
-                        ${Items.price * Items.quantity}
+                        ${PriceFixed}
                       </div>
                       <div className="Action  w-2/12 flex justify-center xl:justify-start items-center ">
                         <button>
@@ -139,23 +141,26 @@ const CartItems = () => {
           <div className="flex justify-between mt-8 items-center">
             <b className="block ">Sub Total</b>
             <span className="block text-lg font-medium">
-              ${getSubTotal(cart)}
+              ${getSubTotal(cart).toFixed(2)}
             </span>
           </div>
           <div className="flex justify-between mt-2 items-center">
             <b className="block ">Discount Money</b>
             <span className="block text-lg font-medium">
-              ${getDiscountAmount(cart, discount)}
+              ${getDiscountAmount(cart, discount).toFixed(2)}
             </span>
           </div>
           <div className="flex justify-between mt-2 items-center border-b pb-3">
             <b className="block ">Delebary Fee</b>
-            <span className="block text-lg font-medium"> ${deliveryFee}</span>
+            <span className="block text-lg font-medium">
+              {" "}
+              ${deliveryFee.toFixed(2)}
+            </span>
           </div>
           <div className="flex justify-between mt-2 items-center">
             <b className="block ">Total Price </b>
             <span className="block text-xl font-semibold ">
-              ${getTotalWithDelivery(deliveryFee)}
+              ${getTotalWithDelivery(deliveryFee).toFixed(2)}
             </span>
           </div>
           <div className="flex gap-2 w-5/6 mt-8">
@@ -177,7 +182,7 @@ const CartItems = () => {
         {/* Price Items Closs  */}
       </div>
 
-      <Checkoutinfo />
+      <Checkoutinfo cart={cart} />
     </div>
   );
 };

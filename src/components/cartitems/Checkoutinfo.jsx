@@ -4,7 +4,7 @@ import AmazonPay from "../../../public/image/prement-image/Amazon_Pay_logo.svg.p
 import PayPalPay from "../../../public/image/prement-image/PayPal.svg.png";
 import cashPay from "../../../public/image/prement-image/handshaik.png";
 
-const Checkoutinfo = () => {
+const Checkoutinfo = ({ cart }) => {
   return (
     <div>
       <div className="Checkout mt-24 px-4 ">
@@ -155,6 +155,7 @@ const Checkoutinfo = () => {
           </div>
           <div className="rightSection w-full lg:w-5/12">
             <b>Product Information</b>
+            <div className="Products"></div>
           </div>
         </div>
       </div>
