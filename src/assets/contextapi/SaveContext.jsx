@@ -27,15 +27,19 @@ export const SaveProvider = ({ children }) => {
       const existingProduct = prevSaved.find((item) => item.id === product.id);
       if (existingProduct) {
         // Displaying a danger message if the product is already saved
-        setDialougeText("Product already exists in saved items!");
-        setBoxStatus("block");
-        setType("danger");
+        setTimeout(() => {
+          setDialougeText("Product already exists in saved items!");
+          setBoxStatus("block");
+          setType("danger");
+        }, 0);
         return prevSaved;
       }
       // Adding the new product to saved products
-      setDialougeText("Product added to saved items!");
-      setBoxStatus("block");
-      setType("success");
+      setTimeout(() => {
+        setDialougeText("Product added to saved items!");
+        setBoxStatus("block");
+        setType("success");
+      }, 0);
       return [...prevSaved, product];
     });
   };

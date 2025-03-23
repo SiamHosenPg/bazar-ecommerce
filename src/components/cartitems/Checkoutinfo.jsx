@@ -1,14 +1,21 @@
 import React from "react";
+import { useCart } from "../../assets/contextapi/Cartcontext"; // Import useCart
 import GooglePay from "/image/prement-image/Google_Pay_GPay_Logo-512.webp";
 import AmazonPay from "/image/prement-image/Amazon_Pay_logo.svg.png";
 import PayPalPay from "/image/prement-image/PayPal.svg.png";
 import cashPay from "/image/prement-image/handshaik.png";
 
 const Checkoutinfo = () => {
+  const { cart, getSubTotal, getTotalWithDelivery } = useCart(); // Get cart data and calculations from CartContext
+
+  const deliveryFee = 5; // Example delivery fee
+  const subTotal = getSubTotal();
+  const totalWithDelivery = getTotalWithDelivery(deliveryFee);
+
   return (
     <div>
-      <div className="Checkout PageRatio mt-24 px-4 ">
-        <h3 className="">Checkout </h3>
+      <div className="Checkout PageRatio  px-4 ">
+        <h3 className="mt-12">Checkout </h3>
         <div className="flex flex-col lg:flex-row gap-24 items-start justify-between mt-6 pb-10">
           <div className="LeftSection w-full lg:w-7/12">
             {/* Contact Information Section */}
@@ -161,7 +168,48 @@ const Checkoutinfo = () => {
           {/* Product Information Section */}
           <div className="rightSection w-full lg:w-5/12">
             <b>Product Information</b>
-            <div className="Products"></div>
+            <div className="Products">
+              {cart.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex justify-between items-center border-b py-4"
+                >
+                  <div className="flex items-center gap-4">
+                    <img
+                      className="w-20 h-20 object-cover overflow-x-hidden bg-slate-200 rounded-md"
+                      src={item.filePath}
+                      alt={item.name}
+                    />
+                    <div className="w-[calc(100%_-_80px)]">
+                      <b className="">{item.name}</b>
+                      <p className="text-sm text-gray-600">
+                        Quantity: {item.quantity}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-lg font-medium">
+                    ${(item.price * item.quantity).toFixed(2)}
+                  </p>
+                </div>
+              ))}
+            </div>
+            {/* Total Price Section */}
+            <div className="mt-6">
+              <div className="flex justify-between items-center ">
+                <b className="">Subtotal</b>
+                <p className="text-lg font-medium">${subTotal.toFixed(2)}</p>
+              </div>
+              <div className="flex justify-between items-center mt-3">
+                <b className="">Delivery Fee</b>
+                <p className="text-lg font-medium">${deliveryFee.toFixed(2)}</p>
+              </div>
+              <div className="flex justify-between items-center mt-3">
+                <h4 className="">Total</h4>
+                <p className="text-lg font-medium">
+                  ${totalWithDelivery.toFixed(2)}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
 import { AiOutlineSafety } from "react-icons/ai";
 import { MdErrorOutline } from "react-icons/md";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 import { useCart } from "../../assets/contextapi/Cartcontext";
 import Checkoutinfo from "./Checkoutinfo";
@@ -23,10 +24,18 @@ const CartItems = () => {
     applyCoupon,
   } = useCart();
   const [couponCode, setCouponCode] = useState("");
+  const navigate = useNavigate(); // Initialize useNavigate
+
   const handleSubmit = (event) => {
     event.preventDefault();
   };
-  const deliveryFee = 5; // ডেলিভারি ফি $5 (তুই চাইলে এটা dinamic করতে পারিস)
+
+  const deliveryFee = 5; // Delivery fee $5
+
+  const handleCheckout = () => {
+    navigate("/checkout"); // Navigate to the checkout page
+  };
+
   return (
     <div className="mt-14">
       <h3>Shopping Cart</h3>
@@ -175,7 +184,10 @@ const CartItems = () => {
               </a>
             </p>
           </div>
-          <div className=" mt-8 border rounded-full w-[200px] bg-[#333] text-white text-center py-3 float-right">
+          <div
+            className="mt-8 border rounded-full w-[200px] bg-[#333] text-white text-center py-3 float-right cursor-pointer"
+            onClick={handleCheckout}
+          >
             Checkout Now
           </div>
         </div>

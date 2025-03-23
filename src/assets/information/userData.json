@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "address": "123 Main St, Springfield, USA",
+    "phone": "+1-555-1234",
+    "joinedDate": "2023-01-15",
+    "password": "password123"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "address": "456 Elm St, Metropolis, USA",
+    "phone": "+1-555-5678",
+    "joinedDate": "2023-02-20",
+    "password": "password456"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "email": "alicejohnson@example.com",
+    "address": "789 Oak St, Gotham, USA",
+    "phone": "+1-555-9012",
+    "joinedDate": "2023-03-10",
+    "password": "password789"
+  }
+]

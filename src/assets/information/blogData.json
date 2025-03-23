@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of E-commerce",
+    "author": "John Doe",
+    "date": "2025-03-23",
+    "content": "E-commerce is evolving rapidly, with new technologies and trends emerging every day. In this blog post, we explore the future of e-commerce and what it means for businesses and consumers alike.",
+    "image": "/image/blog/1.jpg",
+    "hashtag": "#FutureOfEcommerce"
+  },
+  {
+    "id": 2,
+    "title": "Top 10 E-commerce Trends in 2025",
+    "author": "Jane Smith",
+    "date": "2025-03-20",
+    "content": "As we move further into 2025, several e-commerce trends are shaping the industry. From AI-driven personalization to sustainable shopping, here are the top 10 trends to watch out for.",
+    "image": "/image/blog/2.jpg",
+    "hashtag": "#EcommerceTrends2025"
+  },
+  {
+    "id": 3,
+    "title": "How to Optimize Your Online Store for SEO",
+    "author": "Alice Johnson",
+    "date": "2025-03-18",
+    "content": "SEO is crucial for driving traffic to your online store. In this blog post, we share tips and strategies for optimizing your e-commerce site for search engines.",
+    "image": "/image/blog/3.jpg",
+    "hashtag": "#SEOOptimization"
+  },
+  {
+    "id": 4,
+    "title": "The Impact of Social Media on E-commerce",
+    "author": "Michael Brown",
+    "date": "2025-03-15",
+    "content": "Social media has become a powerful tool for e-commerce businesses. In this blog post, we discuss the impact of social media on e-commerce and how businesses can leverage it to boost sales.",
+    "image": "/image/blog/4.jpg",
+    "hashtag": "#SocialMediaEcommerce"
+  },
+  {
+    "id": 5,
+    "title": "The Rise of Mobile Shopping",
+    "author": "Emily Davis",
+    "date": "2025-03-10",
+    "content": "Mobile shopping is on the rise, with more consumers using their smartphones to make purchases. In this blog post, we explore the rise of mobile shopping and what it means for e-commerce businesses.",
+    "image": "/image/blog/5.jpg",
+    "hashtag": "#MobileShopping"
+  }
+]

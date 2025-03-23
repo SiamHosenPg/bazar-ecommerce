@@ -6,7 +6,8 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   // Accessing functions from DialogueContext for showing messages
-  const { setDialougeText, setBoxStatus } = useContext(DialogueContext);
+  const { setDialougeText, setBoxStatus, setType } =
+    useContext(DialogueContext);
 
   // State to store cart items, initialized from local storage
   const [cart, setCart] = useState(() => {
@@ -31,13 +32,13 @@ export const CartProvider = ({ children }) => {
         // Displaying a danger message if the product is already in the cart
         setDialougeText("Product already exists in the cart!");
         setBoxStatus("block");
-
+        setType("danger");
         return prevCart;
       }
       // Adding the new product with quantity 1
       setDialougeText("Product added to the cart!");
       setBoxStatus("block");
-
+      setType("success");
       return [...prevCart, { ...product, quantity: 1 }];
     });
   };
@@ -105,10 +106,12 @@ export const CartProvider = ({ children }) => {
       setDiscount(coupons[code]); // Applying the discount
       setDialougeText(`Coupon applied! You got ${coupons[code]}% off.`);
       setBoxStatus("block");
+      setType("success");
     } else {
       setDiscount(0); // Resetting the discount if the coupon is invalid
       setDialougeText("Invalid coupon code!");
       setBoxStatus("block");
+      setType("danger");
     }
   };
 

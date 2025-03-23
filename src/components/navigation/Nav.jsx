@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../assets/contextapi/Searchcontext";
 import { CartContext } from "../../assets/contextapi/Cartcontext";
 import { SaveContext } from "../../assets/contextapi/SaveContext"; // Import SaveContext
+import { UserContext } from "../../assets/contextapi/UserContext"; // Import UserContext
 
 const Nav = () => {
   const [NavpagePosition, SetNavPosition] = useState(false);
@@ -18,11 +19,12 @@ const Nav = () => {
 
   const { getTotalItems } = useContext(CartContext); // Get the total items from CartContext
   const { getTotalSavedItems } = useContext(SaveContext); // Get the total saved items from SaveContext
+  const { loggedInUser, logoutUser } = useContext(UserContext); // Get the logged-in user and logout function from UserContext
   const totalItems = getTotalItems(); // Calculate total items
   const totalSavedItems = getTotalSavedItems(); // Calculate total saved items
 
   const handelNavPosotion = () => {
-    if (NavpagePosition == true) {
+    if (NavpagePosition === true) {
       SetNavPosition(false);
       setRightPosition("right-[-400px]");
       setShadowdisplay("hidden");
@@ -50,6 +52,18 @@ const Nav = () => {
     navigate("/results");
     showSGbox(false);
   };
+
+  const handleProfileClick = () => {
+    if (loggedInUser) {
+      navigate("/profile");
+    } else {
+      navigate("/login");
+    }
+  };
+
+  useEffect(() => {
+    // This effect will run whenever loggedInUser changes
+  }, [loggedInUser]);
 
   return (
     <nav className="Navigation w-full sticky top-0 h-[60px] sm:h-[60px] md:h-[60px] xl:h-[78px] border-b bg-white z-50 ">
@@ -79,7 +93,7 @@ const Nav = () => {
               </NavLink>
             </li>
             <li className="py-1" onClick={handelNavPosotion}>
-              <NavLink to="/">Gift Cards</NavLink>
+              <NavLink to="/blog">Blog & News</NavLink>
             </li>
             <li className="py-1" onClick={handelNavPosotion}>
               <NavLink to="/about">About Us</NavLink>
@@ -115,14 +129,13 @@ const Nav = () => {
               )}
               <span className=" block lg:hidden font-medium">Save</span>
             </NavLink>
-            <NavLink
-              onClick={handelNavPosotion}
-              to="/login"
+            <button
+              onClick={handleProfileClick}
               className="flex gap-3 items-center w-full lg:w-fit py-1"
             >
               <CgProfile className="text-lg block" />
               <span className=" block lg:hidden font-medium">Profile</span>
-            </NavLink>
+            </button>
 
             <div className="Inputbox w-full lg:w-[260px] flex items-center justify-between gap-3 mt-5 lg:mt-0 mb-6 lg:mb-0 border border-[#666] rounded-full overflow-hidden">
               <input
