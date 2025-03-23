@@ -56,7 +56,7 @@ npm run dev
 
 ### Download Guide
 To download the project, follow these steps:
-1. Go to the GitHub repository: [Bazar E-Commerce](https://github.com/yourusername/bazar-ecommerce)
+1. Go to the GitHub repository: [Bazar E-Commerce](https://github.com/SiamHosenPg/bazar-ecommerce.git)
 2. Click on the "Code" button and select "Download ZIP".
 3. Extract the downloaded ZIP file to your desired location.
 
