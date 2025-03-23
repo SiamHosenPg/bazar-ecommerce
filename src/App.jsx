@@ -22,6 +22,8 @@ import { DialogueProvider } from "./assets/contextapi/Dialoguecontext";
 import Notfound from "./pages/Notfound";
 import { SearchProvider } from "./assets/contextapi/Searchcontext";
 import Searchresult from "./pages/Searchresult";
+import Checkout from "./pages/Checkout";
+import { SaveProvider } from "./assets/contextapi/SaveContext";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -39,59 +41,65 @@ function App() {
     <ProductDataProvider>
       <DialogueProvider>
         <CartProvider>
-          <SearchProvider>
-            {loading ? (
-              // লোডিং স্পিনার দেখাবে
-              <div className="flex justify-center items-center h-screen">
-                <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
-              </div>
-            ) : (
-              // ওয়েবসাইটের মেইন কন্টেন্ট
+          <SaveProvider>
+            <SearchProvider>
+              {loading ? (
+                // লোডিং স্পিনার দেখাবে
+                <div className="flex justify-center items-center h-screen">
+                  <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+                </div>
+              ) : (
+                // ওয়েবসাইটের মেইন কন্টেন্ট
 
-              <Router>
-                <Routes>
-                  <Route path="/login" element={<Loginpage />} />
-                  <Route
-                    path="/*"
-                    element={
-                      <>
-                        <ScrollToTop />
-                        <Nav />
-                        <Dialoguebox />
-                        <Routes>
-                          <Route path="/" element={<Home />} />
-                          <Route path="/home" element={<Home />} />
-                          <Route path="*" element={<Notfound />} />
-                          <Route path="/about" element={<About />} />
-                          <Route path="/allproducts" element={<AllProduct />} />
-                          <Route path="/login" element={<Loginpage />} />
-                          <Route
-                            path="/allproducts/:id"
-                            element={<Productpreview />}
-                          />
-                          <Route path="/carts" element={<Carts />} />
-                          <Route path="/save" element={<Save />} />
-                          <Route path="/shoe" element={<Shoepage />} />
-                          <Route path="/results" element={<Searchresult />} />
-                          <Route path="/watch" element={<Watchproduct />} />
-                          <Route path="/dress" element={<Dressproduct />} />
-                          <Route
-                            path="/headphones"
-                            element={<Headphoneproduct />}
-                          />
-                          <Route
-                            path="/faceproduct"
-                            element={<Faceproduct />}
-                          />
-                        </Routes>
-                        <Footer />
-                      </>
-                    }
-                  />
-                </Routes>
-              </Router>
-            )}
-          </SearchProvider>
+                <Router>
+                  <Routes>
+                    <Route path="/login" element={<Loginpage />} />
+                    <Route
+                      path="/*"
+                      element={
+                        <>
+                          <ScrollToTop />
+                          <Nav />
+                          <Dialoguebox />
+                          <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/home" element={<Home />} />
+                            <Route path="*" element={<Notfound />} />
+                            <Route path="/about" element={<About />} />
+                            <Route
+                              path="/allproducts"
+                              element={<AllProduct />}
+                            />
+                            <Route path="/login" element={<Loginpage />} />
+                            <Route
+                              path="/allproducts/:id"
+                              element={<Productpreview />}
+                            />
+                            <Route path="/carts" element={<Carts />} />
+                            <Route path="/save" element={<Save />} />
+                            <Route path="/shoe" element={<Shoepage />} />
+                            <Route path="/results" element={<Searchresult />} />
+                            <Route path="/watch" element={<Watchproduct />} />
+                            <Route path="/dress" element={<Dressproduct />} />
+                            <Route path="/checkout" element={<Checkout />} />
+                            <Route
+                              path="/headphones"
+                              element={<Headphoneproduct />}
+                            />
+                            <Route
+                              path="/faceproduct"
+                              element={<Faceproduct />}
+                            />
+                          </Routes>
+                          <Footer />
+                        </>
+                      }
+                    />
+                  </Routes>
+                </Router>
+              )}
+            </SearchProvider>
+          </SaveProvider>
         </CartProvider>
       </DialogueProvider>
     </ProductDataProvider>

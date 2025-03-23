@@ -7,13 +7,20 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../assets/contextapi/Searchcontext";
-import { CgDanger } from "react-icons/cg";
+import { CartContext } from "../../assets/contextapi/Cartcontext";
+import { SaveContext } from "../../assets/contextapi/SaveContext"; // Import SaveContext
 
 const Nav = () => {
   const [NavpagePosition, SetNavPosition] = useState(false);
   const [RightnavPostion, setRightPosition] = useState("right-[-400px]");
   const [Shadowdisplay, setShadowdisplay] = useState("hidden");
   const [SuggestDp, SetSguutdp] = useState("block");
+
+  const { getTotalItems } = useContext(CartContext); // Get the total items from CartContext
+  const { getTotalSavedItems } = useContext(SaveContext); // Get the total saved items from SaveContext
+  const totalItems = getTotalItems(); // Calculate total items
+  const totalSavedItems = getTotalSavedItems(); // Calculate total saved items
+
   const handelNavPosotion = () => {
     if (NavpagePosition == true) {
       SetNavPosition(false);
@@ -79,26 +86,34 @@ const Nav = () => {
             </li>
           </ul>
           <div className="block lg:hidden absolute bottom-20 text-[#888] text-[13px]  pr-8">
-            @Copyrighting cmaim in 2022 all right resubels.
+            © 2022 Bazar. All rights reserved.
           </div>
           <div className=" w-full lg:w-fit Buttons flex flex-col-reverse lg:flex-row gap-1 lg:gap-4  items-start lg:items-center">
             <NavLink
               onClick={handelNavPosotion}
               to="/carts"
-              className="flex gap-3 items-center w-full lg:w-fit py-1 "
+              className="flex gap-3 items-center w-full lg:w-fit py-1 relative"
             >
               <MdOutlineShoppingCart className="text-lg" />
+              {totalItems > 0 && (
+                <span className="absolute top-0 right-[-10px] lg:mt-[-8px] bg-red-500 text-white text-xs rounded-full w-[18px] h-[18px] flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
               <span className=" block lg:hidden font-medium">Cart</span>
             </NavLink>
             <NavLink
               onClick={handelNavPosotion}
               to="/save"
-              className="flex gap-3 items-center w-full lg:w-fit py-1"
+              className="flex gap-3 items-center w-full lg:w-fit py-1 relative"
             >
               <FaRegHeart className="text-lg" />
-              <span className=" block lg:hidden font-medium">
-                Save Products
-              </span>
+              {totalSavedItems > 0 && (
+                <span className="absolute top-0 right-[-10px] lg:mt-[-8px] bg-red-500 text-white text-xs rounded-full w-[18px] h-[18px] flex items-center justify-center">
+                  {totalSavedItems}
+                </span>
+              )}
+              <span className=" block lg:hidden font-medium">Save</span>
             </NavLink>
             <NavLink
               onClick={handelNavPosotion}

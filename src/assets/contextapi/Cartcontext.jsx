@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { DialogueContext } from "./Dialoguecontext";
 
 // Creating a new context for the cart
@@ -8,11 +8,19 @@ export const CartProvider = ({ children }) => {
   // Accessing functions from DialogueContext for showing messages
   const { setDialougeText, setBoxStatus } = useContext(DialogueContext);
 
-  // State to store cart items
-  const [cart, setCart] = useState([]);
+  // State to store cart items, initialized from local storage
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cartItems");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
   // State to store the discount percentage
   const [discount, setDiscount] = useState(0);
+
+  // Save cart to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cart));
+  }, [cart]);
 
   // Function to add a product to the cart
   const addToCart = (product) => {
@@ -20,12 +28,16 @@ export const CartProvider = ({ children }) => {
       // Checking if the product already exists in the cart
       const existingProduct = prevCart.find((item) => item.id === product.id);
       if (existingProduct) {
-        // Displaying a message if the product is already in the cart
+        // Displaying a danger message if the product is already in the cart
         setDialougeText("Product already exists in the cart!");
         setBoxStatus("block");
+
         return prevCart;
       }
       // Adding the new product with quantity 1
+      setDialougeText("Product added to the cart!");
+      setBoxStatus("block");
+
       return [...prevCart, { ...product, quantity: 1 }];
     });
   };
@@ -100,6 +112,11 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  // Function to get the total number of items in the cart
+  const getTotalItems = () => {
+    return cart.reduce((acc, item) => acc + item.quantity, 0);
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -114,6 +131,7 @@ export const CartProvider = ({ children }) => {
         getTotalPrice,
         getTotalWithDelivery,
         applyCoupon,
+        getTotalItems, // Provide the getTotalItems function
       }}
     >
       {children}

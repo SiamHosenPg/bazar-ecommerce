@@ -1,22 +1,45 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { CgDanger } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
 import { DialogueContext } from "../../../assets/contextapi/Dialoguecontext";
 
 const Dialoguebox = () => {
-  const { DialougeText, BoxStatus, setBoxStatus } = useContext(DialogueContext);
+  const { DialougeText, BoxStatus, setBoxStatus, type } =
+    useContext(DialogueContext);
+
+  useEffect(() => {
+    if (BoxStatus === "block") {
+      const timer = setTimeout(() => {
+        setBoxStatus("hidden");
+      }, 3000); // Hide after 3 seconds
+
+      return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    }
+  }, [BoxStatus, setBoxStatus]);
+
+  const handleClose = () => {
+    setBoxStatus("hidden");
+  };
+
+  // Determine background color based on the type prop
+  const backgroundColor =
+    type === "success"
+      ? "bg-green-100"
+      : type === "danger"
+      ? "bg-red-100"
+      : "bg-gray-100";
 
   return (
     <div
-      className={` ${BoxStatus} w-full h-screen fixed bg-[#00000086] z-50 top-0 left-0 flex items-center justify-center`}
+      className={` ${BoxStatus} rounded-md fixed top-[100px] left-1/2 transform -translate-x-1/2 ${backgroundColor} z-50 flex items-center justify-center`}
     >
-      <div className="w-[400px] bg-white rounded-md px-8 py-5 flex items-center justify-center flex-col">
-        <CgDanger className="text-5xl text-[#888] " />
-        <p className="text-center text-[#777] mt-8 text-sm"> {DialougeText}</p>
-        <button
-          onClick={() => setBoxStatus("hidden")}
-          className=" border rounded-md px-5 py-3 mt-6"
-        >
-          Close
+      <div className="   px-4 py-2 flex items-center justify-between w-full max-w-md">
+        <div className="flex items-center gap-2">
+          <CgDanger className="text-2xl text-[#888]" />
+          <p className="text-[#777] text-sm"> {DialougeText}</p>
+        </div>
+        <button onClick={handleClose} className="text-[#888] hover:text-[#555]">
+          <IoClose className="text-2xl" />
         </button>
       </div>
     </div>

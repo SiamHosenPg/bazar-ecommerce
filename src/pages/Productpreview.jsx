@@ -10,9 +10,11 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FiMessageCircle } from "react-icons/fi";
 import { LuBadgeCheck } from "react-icons/lu";
 import { useCart } from "../assets/contextapi/Cartcontext";
+import { useSave } from "../assets/contextapi/SaveContext"; // Import SaveContext
 
 const Productpreview = () => {
   const { addToCart } = useCart();
+  const { saveProduct } = useSave(); // Use SaveContext
   const { ProductsData } = useContext(ProductData);
   const { id } = useParams();
   const ProductInfo = ProductsData.find((p) => p.id === parseInt(id));
@@ -24,6 +26,12 @@ const Productpreview = () => {
     addToCart(ProductInfo);
     SetAddToCardCss("ActiveInCart");
   };
+
+  // Function to handle save product click
+  const handleSaveProductClick = () => {
+    saveProduct(ProductInfo);
+  };
+
   // Clossing add to cart button function
   return (
     <div className="bg-white">
@@ -120,7 +128,8 @@ const Productpreview = () => {
                   </button>
 
                   <button
-                    className={` border px-6 h-12 border-slate-600 rounded-sm text-black font-medium`}
+                    onClick={handleSaveProductClick}
+                    className={`SaveProducts border px-6 h-12 border-slate-600 rounded-sm text-black font-medium`}
                   >
                     <FaRegHeart />
                   </button>

@@ -181,8 +181,6 @@ const CartItems = () => {
         </div>
         {/* Price Items Closs  */}
       </div>
-
-      <Checkoutinfo cart={cart} />
     </div>
   );
 };
