@@ -201,7 +201,7 @@ const Nav = () => {
               <div className=" w-full ">
                 <b className=" text-center mt-24 flex items-center justify-center gap-3">
                   {" "}
-                  <CgDanger className="text-xl" />
+
                   No Products found
                 </b>
               </div>
